@@ -7,6 +7,10 @@
     @apply bg-slate-200
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   h1,
   h2,
   h3,
@@ -16,11 +20,11 @@
     @apply font-bold
   }
 
-  h1{
-    @apply text-4xl sm:text-5xl md:text-6xl 
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
   }
 
-  button{
+  button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase
   }
 }

@@ -1,19 +1,29 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { BsPersonLinesFill } from 'react-icons/bs'
+import { BsPersonLinesFill } from 'react-icons/bs';
 
 const Navbar = () => {
     const [mobileNav, setMobileNav] = useState(false);
+    const [shadow, setShadow] = useState(false);
 
     const handleMobileNav = () => {
         setMobileNav(!mobileNav);
     }
 
+    useEffect(() => {
+        const handleShadew = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true)
+            } else setShadow(false)
+        }
+        window.addEventListener('scroll', handleShadew)
+    }, [])
+
     return (
-        <div className='w-full fixed h-20 shadow-xl z-50'>
+        <div className={shadow ? 'w-full fixed h-20 shadow-xl z-[100] bg-gray-200' : 'w-full fixed h-20 z-[100] bg-gray-200'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <h1>Nick A</h1>
                 <ul className='hidden md:flex'>
@@ -26,7 +36,7 @@ const Navbar = () => {
                     <AiOutlineMenu size={25} className='cursor-pointer' />
                 </div>
             </div>
-            <div className={mobileNav ? 'fixed left-0 top-0 bg-black/70 h-screen w-full' : 'hidden'}>
+            <div className={mobileNav ? 'md:hidden fixed left-0 top-0 bg-black/70 h-screen w-full' : 'hidden'}>
                 <div className={mobileNav
                     ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md-[45%] h-screen bg-white p-10 ease-in duration-500'
                     : 'fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md-[45%] h-screen bg-white p-10 ease-in duration-500'}>
