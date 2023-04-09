@@ -28,9 +28,9 @@ const Navbar = () => {
                 <h1>Nick A</h1>
                 <ul className='hidden md:flex'>
                     <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
-                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
-                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
-                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
+                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>Skills</li></Link>
+                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>Projects</li></Link>
+                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>Contact</li></Link>
                 </ul>
                 <div onClick={handleMobileNav} className='md:hidden'>
                     <AiOutlineMenu size={25} className='cursor-pointer' />

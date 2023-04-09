@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
   body {
     @apply bg-slate-200
-  }
-
-  html {
-    scroll-behavior: smooth;
   }
 
   h1,
@@ -24,7 +24,11 @@
     @apply text-4xl sm:text-5xl md:text-6xl
   }
 
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase
+    @apply shadow-lg hover:shadow-xl shadow-gray-400 rounded-xl uppercase
   }
 }
