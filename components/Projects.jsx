@@ -10,7 +10,7 @@ import vacationLandingPage from '../assets/images/vacation_landing_page.png';
 const Projects = () => {
     return (
         //work on margin
-        <div className='w-full h-auto text-center flex flex-col justify-center items-center mt-24'>
+        <div id='projects' className='w-full h-auto text-center flex flex-col justify-center items-center mt-24'>
             <p className='text-xl tracking-widest uppercase text-red-800'>Projects</p>
             <h2 className='py-4'>What I've Built</h2>
             <div className='grid md:grid-cols-2 gap-8 px-4'>

@@ -22,15 +22,23 @@ const Navbar = () => {
         window.addEventListener('scroll', handleShadew)
     }, [])
 
+    const handleNavClick = (id) => {
+        const skillsElement = document.getElementById(id);
+        const offset = 90;
+        const yCoordinate = skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: yCoordinate, behavior: 'smooth' });
+        setMobileNav(false);
+    }
+
     return (
         <div className={shadow ? 'w-full fixed h-20 shadow-xl z-[100] bg-gray-200' : 'w-full fixed h-20 z-[100] bg-gray-200'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <h1>Nick A</h1>
+                <h2>Nick A</h2>
                 <ul className='hidden md:flex'>
-                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
-                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>Skills</li></Link>
-                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>Projects</li></Link>
-                    <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>Contact</li></Link>
+                    <li onClick={() => handleNavClick('about')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>About Me</li>
+                    <li onClick={() => handleNavClick('skills')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>Skills</li>
+                    <li onClick={() => handleNavClick('projects')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>Projects</li>
+                    <li onClick={() => handleNavClick('contact')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>Contact</li>
                 </ul>
                 <div onClick={handleMobileNav} className='md:hidden'>
                     <AiOutlineMenu size={25} className='cursor-pointer' />
@@ -48,10 +56,10 @@ const Navbar = () => {
                     </div>
                     <div>
                         <ul className='flex flex-col w-full gap-12 mt-8'>
-                            <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
-                            <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
-                            <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
-                            <Link href='/'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
+                            <Link onClick={() => handleNavClick('about')} href='/#about'><li className='ml-10 uppercase hover:border-b border-black'>About Me</li></Link>
+                            <Link onClick={() => handleNavClick('skills')} href='/#skills'><li className='ml-10 uppercase hover:border-b border-black'>Skills</li></Link>
+                            <Link onClick={() => handleNavClick('projects')} href='/#projects'><li className='ml-10 uppercase hover:border-b border-black'>Projects</li></Link>
+                            <Link onClick={() => handleNavClick('contact')} href='/#contact'><li className='ml-10 uppercase hover:border-b border-black'>Contact</li></Link>
                         </ul>
                     </div>
                     <div className='pt-40'>
