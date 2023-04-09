@@ -1,53 +1,21 @@
-import Image from 'next/image';
 import React from 'react';
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from 'react-icons/fa';
+import { SiJavascript, SiTailwindcss } from 'react-icons/si';
+import Skill from './Skill';
 
 const Skills = () => {
     return (
         <div className='w-full lg:h-screen p-2'>
             <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-                <p className='text-xl tracking-widest uppercase text-red-800'>Skiils</p>
+                <p className='text-xl tracking-widest uppercase text-red-800'>Skills</p>
                 <h2>What I Can Do</h2>
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                                <Image src='' alt='/' width='64px' height='64px' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>HTML</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                                <Image src='' alt='/' width='64px' height='64px' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>HTML</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                                <Image src='' alt='/' width='64px' height='64px' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>HTML</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-                        <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-                            <div className='m-auto'>
-                                <Image src='' alt='/' width='64px' height='64px' />
-                            </div>
-                            <div className='flex flex-col items-center justify-center'>
-                                <h3>HTML</h3>
-                            </div>
-                        </div>
-                    </div>
+                    <Skill title='HTML' icon={<FaHtml5 size={50} />} />
+                    <Skill title='CSS' icon={<FaCss3Alt size={50} />} />
+                    <Skill title='Javascript' icon={<SiJavascript size={50} />} />
+                    <Skill title='React Js' icon={<FaReact size={50} />} />
+                    <Skill title='Tailwind CSS' icon={<SiTailwindcss size={50} />} />
+                    <Skill title='Tailwind CSS' icon={<FaBootstrap size={50} />} />
                 </div>
             </div>
 
