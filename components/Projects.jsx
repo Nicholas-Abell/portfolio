@@ -1,7 +1,11 @@
 import React from 'react';
-import testImg from '../assets/images/movie_database.png'
 import Project from './Project';
 
+//images
+import movieDatabase from '../assets/images/movie_database.png';
+import smsConstruction from '../assets/images/sms_construction.png';
+import wordleClone from '../assets/images/wordle_clone.jpeg';
+import vacationLandingPage from '../assets/images/vacation_landing_page.png';
 
 const Projects = () => {
     return (
@@ -12,18 +16,24 @@ const Projects = () => {
             <div className='grid md:grid-cols-2 gap-8 px-4'>
                 <Project
                     title='Movie Database'
-                    img={testImg} projectURL='/'
-                    info='Find Which streaming servives has your favorite movies.'
+                    img={movieDatabase} projectURL='/'
+                    info='Find Which streaming servive has your favorite movies.'
                 />
                 <Project
-                    title='Movie Database'
-                    img={testImg} projectURL='/'
-                    info='Find Which streaming servives has your favorite movies.'
+                    title='SMS Construction & Remodeling'
+                    img={smsConstruction} projectURL='/'
+                    info='A landing page that I built for a client. 
+                    The page is currently hosted on Hostinger'
                 />
                 <Project
-                    title='Movie Database'
-                    img={testImg} projectURL='/'
-                    info='Find Which streaming servives has your favorite movies.'
+                    title='Vacation Landing Page'
+                    img={vacationLandingPage} projectURL='/'
+                    info='A landing page built with React and styled with tailwind.'
+                />
+                <Project
+                    title='Wordle Game'
+                    img={wordleClone} projectURL='/'
+                    info='A clone of the popular game Wordle'
                 />
             </div>
         </div>
