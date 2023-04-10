@@ -4,14 +4,28 @@ import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsPersonLinesFill } from 'react-icons/bs';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
     const [mobileNav, setMobileNav] = useState(false);
     const [shadow, setShadow] = useState(false);
+    const [navbackground, setNavBackground] = useState('#ECF0F3');
+    const [linkColor, setLinkColor] = useState('#1F2937');
+    const router = useRouter();
 
     const handleMobileNav = () => {
         setMobileNav(!mobileNav);
     }
+
+    useEffect(() => {
+        if (router.asPath !== '/') {
+            setNavBackground('transparent');
+            setLinkColor('#fafafa');
+        } else {
+            setNavBackground('#ECF0F3');
+            setLinkColor('#1F2937')
+        }
+    }, [router])
 
     useEffect(() => {
         const handleShadew = () => {
@@ -23,6 +37,9 @@ const Navbar = () => {
     }, [])
 
     const handleNavClick = (id) => {
+        if (window.location.pathname !== '/') {
+            window.location.href = '/';
+        }
         const skillsElement = document.getElementById(id);
         const offset = 90;
         const yCoordinate = skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;
