@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <div className={shadow ? 'w-full fixed h-20 shadow-xl z-[100] bg-gray-200' : 'w-full fixed h-20 z-[100] bg-gray-200'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <h2>Nick A</h2>
+                <h2 onClick={() => window.scrollTo(0, 0)}>Nick A</h2>
                 <ul className='hidden md:flex'>
                     <li onClick={() => handleNavClick('about')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>About Me</li>
                     <li onClick={() => handleNavClick('skills')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>Skills</li>
@@ -66,12 +66,12 @@ const Navbar = () => {
                         <p>Let's Connect</p>
                     </div>
                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
-                            <FaLinkedin size={25} />
-                        </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                        <Link href='https://github.com/Nicholas-Abell' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                             <FaGithub size={25} />
-                        </div>
+                        </Link>
+                        <Link href='https://www.linkedin.com/in/nicholas-abell-348807192/' className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                            <FaLinkedin size={25} />
+                        </Link>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                             <AiOutlineMail size={25} />
                         </div>
