@@ -27,16 +27,16 @@ const Contact = () => {
                             <div>
                                 <p className='uppercase pt-12 text-center'>Connect With Me</p>
                                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
                                         <FaGithub size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
                                         <FaLinkedin size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
                                         <AiOutlineMail size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
                                         <BsPersonLinesFill size={25} />
                                     </div>
                                 </div>
