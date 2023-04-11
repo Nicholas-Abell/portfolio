@@ -16,7 +16,10 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-        if (window.location.pathname === '/projectInfo') {
+        if (window.location.pathname === '/projectInfo'
+            || window.location.pathname === '/smsconstruction'
+            || window.location.pathname === '/wordle'
+            || window.location.pathname === '/vacation') {
             setNavBackground('transparent');
             setLinkColor('white');
         } else {

@@ -16,23 +16,23 @@ const Projects = () => {
             <div className='grid md:grid-cols-2 gap-8 px-4'>
                 <Project
                     title='Movie Database'
-                    img={movieDatabase} projectURL='/'
+                    img={movieDatabase} projectURL='/moviedatabase'
                     info='Find Which streaming servive has your favorite movies.'
                 />
                 <Project
                     title='SMS Construction & Remodeling'
-                    img={smsConstruction} projectURL='/'
+                    img={smsConstruction} projectURL='/smsconstruction'
                     info='A landing page that I built for a client. 
                     The page is currently hosted on Hostinger'
                 />
                 <Project
                     title='Vacation Landing Page'
-                    img={vacationLandingPage} projectURL='/'
+                    img={vacationLandingPage} projectURL='/vacation'
                     info='A landing page built with React and styled with tailwind.'
                 />
                 <Project
                     title='Wordle Game'
-                    img={wordleClone} projectURL='/'
+                    img={wordleClone} projectURL='/wordle'
                     info='A clone of the popular game Wordle'
                 />
             </div>
