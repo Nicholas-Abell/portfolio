@@ -4,36 +4,34 @@ import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsPersonLinesFill } from 'react-icons/bs';
-import { useRouter } from 'next/router';
 
 const Navbar = () => {
     const [mobileNav, setMobileNav] = useState(false);
     const [shadow, setShadow] = useState(false);
     const [navbackground, setNavBackground] = useState('#ECF0F3');
     const [linkColor, setLinkColor] = useState('#1F2937');
-    const router = useRouter();
 
     const handleMobileNav = () => {
         setMobileNav(!mobileNav);
     }
 
     useEffect(() => {
-        if (router.asPath !== '/') {
+        if (window.location.pathname === '/projectInfo') {
             setNavBackground('transparent');
-            setLinkColor('#fafafa');
+            setLinkColor('white');
         } else {
             setNavBackground('#ECF0F3');
-            setLinkColor('#1F2937')
+            setLinkColor('#1F2937');
         }
-    }, [router])
+    }, [window.location.pathname])
 
     useEffect(() => {
-        const handleShadew = () => {
+        const handleShadow = () => {
             if (window.scrollY >= 90) {
                 setShadow(true)
             } else setShadow(false)
         }
-        window.addEventListener('scroll', handleShadew)
+        window.addEventListener('scroll', handleShadow)
     }, [])
 
     const handleNavClick = (id) => {
@@ -48,8 +46,8 @@ const Navbar = () => {
     }
 
     return (
-        <div className={shadow ? 'w-full fixed h-20 shadow-xl z-[100] bg-gray-200' : 'w-full fixed h-20 z-[100] bg-gray-200'}>
-            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+        <div style={{ backgroundColor: `${navbackground}` }} className={shadow ? `w-full fixed h-20 shadow-xl z-[100] ${navbackground}` : `w-full fixed h-20 z-[100] ${navbackground}`}>
+            <div style={{ color: `${linkColor}` }} className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <h2 onClick={() => window.scrollTo(0, 0)}>Nick A</h2>
                 <ul className='hidden md:flex'>
                     <li onClick={() => handleNavClick('about')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>About Me</li>
