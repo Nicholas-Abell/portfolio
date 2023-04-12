@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-        if (window.location.pathname === '/projectInfo'
+        if (window.location.pathname === '/moviedatabase'
             || window.location.pathname === '/smsconstruction'
             || window.location.pathname === '/wordle'
             || window.location.pathname === '/vacation') {
@@ -41,17 +41,20 @@ const Navbar = () => {
         if (window.location.pathname !== '/') {
             window.location.href = '/';
         }
-        const skillsElement = document.getElementById(id);
-        const offset = 90;
-        const yCoordinate = skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top: yCoordinate, behavior: 'smooth' });
+        else if (id) {
+            const skillsElement = document.getElementById(id);
+            const offset = 90;
+            const yCoordinate = skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: yCoordinate, behavior: 'smooth' })
+        } else { window.scrollTo(0, 0); }
+
         setMobileNav(false);
     }
 
     return (
         <div style={{ backgroundColor: `${navbackground}` }} className={shadow ? `w-full fixed h-20 shadow-xl z-[100] ${navbackground}` : `w-full fixed h-20 z-[100] ${navbackground}`}>
             <div style={{ color: `${linkColor}` }} className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <h2 onClick={() => window.scrollTo(0, 0)}>Nick A</h2>
+                <h2 onClick={() => handleNavClick(0, 0)} className='cursor-pointer'>Nick A</h2>
                 <ul className='hidden md:flex'>
                     <li onClick={() => handleNavClick('about')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>About Me</li>
                     <li onClick={() => handleNavClick('skills')} className='ml-10 uppercase hover:border-b border-black cursor-pointer'>Skills</li>
