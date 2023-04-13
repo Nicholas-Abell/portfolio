@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsPersonLinesFill } from 'react-icons/bs'
@@ -9,6 +10,11 @@ import Image from 'next/image';
 
 
 const Contact = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
@@ -76,7 +82,7 @@ const Contact = () => {
                 <div className='flex justify-center py-12'>
                     <Link href='/'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
-                            <HiChevronDoubleUp size={30} className='m-auto text-red-800' />
+                            <HiChevronDoubleUp onClick={scrollToTop} size={30} className='m-auto text-red-800' />
                         </div>
                     </Link>
                 </div>
