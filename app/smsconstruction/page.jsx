@@ -20,12 +20,14 @@ export default function SMSConstruction() {
                     <h2>Overview</h2>
                     <p className='py-4'>A landing page I built for a client. A local handyman site I made using react and tailwind.
                         Currently hosted on Hostinger. I learned a lot about SEO and google analytics making this project.</p>
-                    <button className='px-8 py-2 mt-4 mr-8 flex justify-center items-center gap-4'>
-                        <a href='https://smsconstructionandremodeling.com/'>Live</a>
-                    </button>
-                    <button className='px-8 py-2 mt-4 mr-8 flex justify-center items-center gap-4'>
-                        <a href='https://github.com/Nicholas-Abell/handy_man'>Github</a>
-                    </button>
+                    <div className='flex items-center'>
+                        <button className='px-8 py-2 mt-4 mr-8 flex justify-center items-center gap-4'>
+                            <a href='https://smsconstructionandremodeling.com/'>Live</a>
+                        </button>
+                        <button className='px-8 py-2 mt-4 mr-8 flex justify-center items-center gap-4'>
+                            <a href='https://github.com/Nicholas-Abell/handy_man'>Github</a>
+                        </button>
+                    </div>
                 </div>
                 <div className=' col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 flex flex-col justify-between items-center'>
                     <p className='text-center font-bold pb-2'>Technologies</p>
