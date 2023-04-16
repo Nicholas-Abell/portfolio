@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, createContext } from 'react';
+import React, { useState, useEffect, createContext } from 'react';
 import Navbar from '@/components/Navbar';
 import './globals.css';
 
@@ -13,6 +13,15 @@ export const DarkModeContext = createContext();
 export default function RootLayout({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  useEffect(() => {
+    const html = document.querySelector('html');
+    if (isDarkMode) {
+      html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
+    }
+  }, [isDarkMode]);
+
   const toggleDarkMode = () => {
     setIsDarkMode(prevState => !prevState)
   }
@@ -20,11 +29,11 @@ export default function RootLayout({ children }) {
   return (
     <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
       <html lang="en">
-        <body className={isDarkMode ? 'bg-black' : 'bg-[#ECF0F3]'}>
+        <body className='dark:bg-black bg-[#ECF0F3]'>
           <Navbar />
           {children}
         </body>
-      </html>
+      </html>g
     </DarkModeContext.Provider>
   )
 }
