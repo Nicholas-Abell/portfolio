@@ -11,7 +11,7 @@ const About = () => {
                     <h1 className='py-4 uppercase text-xl tracking-widest dark:text-red-600'>About Me</h1>
                     <p className='text-gray-700 dark:text-gray-300 py-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aperiam voluptate laborum! Magni nobis perferendis voluptate veritatis soluta provident suscipit voluptas ipsam ea doloribus consequatur, ipsa incidunt dolorum illo minus!</p>
                 </div>
-                <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-12 lg:p-4 hover:scale-105 duration-300'>
+                <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 dark:hover:shadow-red-600 rounded-xl flex items-center justify-center p-12 lg:p-4 hover:scale-105 duration-300'>
                     <Image src={testImg} className='rounded-xl' />
                 </div>
             </div>

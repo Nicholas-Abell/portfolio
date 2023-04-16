@@ -14,7 +14,7 @@ const Main = () => {
         <div id='home' className='w-full h-screen text-center flex justify-center items-center'>
             <div className='relative max-w-[1240px] w-full h-full p-2 flex justify-center items-center'>
                 <div className='absolute top-24 left-8'>
-                    <button onClick={toggleDarkMode} className='p-2 flex justify-center items-center gap-4'>
+                    <button onClick={toggleDarkMode} className='p-2 flex justify-center items-center gap-4 dark:hover:shadow-red-600'>
                         {
                             isDarkMode
                                 ? <BsFillMoonFill size={25} className='text-white' />
@@ -28,7 +28,7 @@ const Main = () => {
                     </p>
                     <h1 className='dark:text-white text-gray-700'>
                         I'm
-                        <span className='text-red-800 px-4'>
+                        <span className='text-red-800 dark:text-red-600 px-4'>
                             Nicholas Abell
                         </span>
                     </h1>
@@ -36,16 +36,16 @@ const Main = () => {
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate cumque ipsam animi ratione mollitia laudantium qui veritatis, quaerat libero recusandae consequuntur quibusdam voluptatum aut, unde distinctio alias. Numquam, ab voluptates.
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                        <Link href='https://github.com/Nicholas-Abell' className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
+                        <Link href='https://github.com/Nicholas-Abell' className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer'>
                             <FaGithub size={25} />
                         </Link>
-                        <Link href='https://www.linkedin.com/in/nicholas-abell-348807192/' className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
+                        <Link href='https://www.linkedin.com/in/nicholas-abell-348807192/' className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer'>
                             <FaLinkedin size={25} />
                         </Link>
-                        <div className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
+                        <div className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer'>
                             <AiOutlineMail size={25} />
                         </div>
-                        <div className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
+                        <div className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer'>
                             <BsPersonLinesFill size={25} />
                         </div>
                     </div>
