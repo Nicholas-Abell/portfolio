@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
         </body>
-      </html>g
+      </html>
     </DarkModeContext.Provider>
   )
 }
