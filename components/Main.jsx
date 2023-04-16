@@ -26,26 +26,26 @@ const Main = () => {
                     <p className='uppercase text-sm tracking-widest pb-4 text-gray-600'>
                         Looking to Improve your Company
                     </p>
-                    <h1 className={isDarkMode ? 'text-white' : 'text-gray-700'}>
+                    <h1 className='dark:text-white text-gray-700'>
                         I'm
                         <span className='text-red-800 px-4'>
                             Nicholas Abell
                         </span>
                     </h1>
-                    <p className={isDarkMode ? 'py-4 text-gray-300 max-w-[70%] m-auto' : 'py-4 text-gray-600 max-w-[70%] m-auto'}>
+                    <p className='py-4 dark:text-gray-300 text-gray-600 max-w-[70%] m-auto'>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate cumque ipsam animi ratione mollitia laudantium qui veritatis, quaerat libero recusandae consequuntur quibusdam voluptatum aut, unde distinctio alias. Numquam, ab voluptates.
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                        <Link href='https://github.com/Nicholas-Abell' className={isDarkMode ? 'text-white bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer' : 'rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'}>
+                        <Link href='https://github.com/Nicholas-Abell' className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
                             <FaGithub size={25} />
                         </Link>
-                        <Link href='https://www.linkedin.com/in/nicholas-abell-348807192/' className={isDarkMode ? 'text-white bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer' : 'rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'}>
+                        <Link href='https://www.linkedin.com/in/nicholas-abell-348807192/' className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
                             <FaLinkedin size={25} />
                         </Link>
-                        <div className={isDarkMode ? 'text-white bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer' : 'rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'}>
+                        <div className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
                             <AiOutlineMail size={25} />
                         </div>
-                        <div className={isDarkMode ? 'text-white bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer' : 'rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'}>
+                        <div className='dark:text-white dark:bg-black rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
                             <BsPersonLinesFill size={25} />
                         </div>
                     </div>
