@@ -21,7 +21,6 @@ const Skills = () => {
                     <Skill title='Firebase' icon={<SiFirebase size={50} className='text-orange-600' />} />
                 </div>
             </div>
-
         </div>
     )
 }

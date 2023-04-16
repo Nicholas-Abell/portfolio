@@ -33,16 +33,16 @@ const Contact = () => {
                             <div>
                                 <p className='uppercase pt-12 text-center'>Connect With Me</p>
                                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
+                                    <div className='dark:text-white dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer ease-in hover:duration-200'>
                                         <FaGithub size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
+                                    <div className='dark:text-white dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer ease-in hover:duration-200'>
                                         <FaLinkedin size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
+                                    <div className='dark:text-white dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer ease-in hover:duration-200'>
                                         <AiOutlineMail size={25} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:shadow-lg cursor-pointer'>
+                                    <div className='dark:text-white dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer ease-in hover:duration-200'>
                                         <BsPersonLinesFill size={25} />
                                     </div>
                                 </div>
@@ -82,8 +82,8 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='flex justify-center py-12'>
-                    <div onClick={scrollToTop} className='rounded-full shadow-lg shadow-gray-400 hover:shadow-lg p-3 cursor-pointer'>
-                        <HiChevronDoubleUp size={30} className='m-auto text-red-800' />
+                    <div onClick={scrollToTop} className='rounded-full shadow-lg text-black shadow-gray-400 hover:shadow-lg p-3 cursor-pointer dark:text-gray-400 dark:hover:text-red-600 dark:hover:shadow-red-600'>
+                        <HiChevronDoubleUp size={30} className='m-auto ' />
                     </div>
                 </div>
             </div>

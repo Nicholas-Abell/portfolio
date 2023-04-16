@@ -11,7 +11,7 @@ export const metadata = {
 export const DarkModeContext = createContext();
 
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     const html = document.querySelector('html');

@@ -37,7 +37,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className={shadow ? `w-full fixed h-20 shadow-xl dark:shadow-gray-400 z-[100] bg-[#ECF0F3] dark:bg-black` : `w-full fixed h-20 z-[100] bg-[#ECF0F3] dark:bg-black`}>
+        <div className={shadow ? `w-full fixed h-20 shadow-xl dark:shadow-gray-400 z-[100] bg-[#ECF0F3] dark:bg-black dark:hover:shadow-red-600` : `w-full fixed h-20 z-[100] bg-[#ECF0F3] dark:bg-black`}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <h2 onClick={() => handleNavClick(0, 0)} className='dark:text-gray-300 cursor-pointer'>Nick A</h2>
                 <ul className='hidden md:flex dark:text-gray-100'>
