@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, createContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import './globals.css';
 
@@ -27,13 +27,11 @@ export default function RootLayout({ children }) {
   }
 
   return (
-    <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
-      <html lang="en">
-        <body className='dark:bg-black bg-[#ECF0F3]'>
-          <Navbar />
-          {children}
-        </body>
-      </html>
-    </DarkModeContext.Provider>
+    <html lang="en">
+      <body className='dark:bg-black bg-[#ECF0F3]'>
+        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+        {children}
+      </body>
+    </html>
   )
 }

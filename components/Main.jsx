@@ -1,27 +1,14 @@
 'use client';
-import React, { useContext } from 'react';
-import { DarkModeContext } from '@/app/layout';
-import Link from 'next/link';
+import React from 'react';
+import Icon from './Icon';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsPersonLinesFill, BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Main = () => {
-
-    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
-
     return (
         <div id='home' className='w-full h-screen text-center flex justify-center items-center'>
             <div className='relative max-w-[1240px] w-full h-full p-2 flex justify-center items-center'>
-                <div className='absolute top-24 left-8'>
-                    <button onClick={toggleDarkMode} className='flex justify-center items-center gap-4 dark:hover:shadow-red-600 dark:hover:text-red-600 ease-in duration-200'>
-                        {
-                            isDarkMode
-                                ? <BsFillMoonFill size={25} className='text-white hover:text-red-600 w-full h-full p-2' />
-                                : <BsFillSunFill size={25} className='text-black w-full h-full p-2' />
-                        }
-                    </button>
-                </div>
                 <div>
                     <p className='uppercase text-sm tracking-widest pb-4 text-gray-600'>
                         Looking to Improve your Company
@@ -36,18 +23,10 @@ const Main = () => {
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate cumque ipsam animi ratione mollitia laudantium qui veritatis, quaerat libero recusandae consequuntur quibusdam voluptatum aut, unde distinctio alias. Numquam, ab voluptates.
                     </p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                        <Link href='https://github.com/Nicholas-Abell' className='dark:text-white dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer ease-in hover:duration-200'>
-                            <FaGithub size={25} />
-                        </Link>
-                        <Link href='https://www.linkedin.com/in/nicholas-abell-348807192/' className='dark:text-white dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer hover:duration-200'>
-                            <FaLinkedin size={25} />
-                        </Link>
-                        <div className='dark:text-white dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer hover:duration-200'>
-                            <AiOutlineMail size={25} />
-                        </div>
-                        <div className='dark:text-white dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-lg cursor-pointer hover:duration-200'>
-                            <BsPersonLinesFill size={25} />
-                        </div>
+                        <Icon reactIcon={<FaGithub size={25} />} url={'https://github.com/Nicholas-Abell'} />
+                        <Icon reactIcon={<FaLinkedin size={25} />} url={'https://www.linkedin.com/in/nicholas-abell-348807192/'} />
+                        <Icon reactIcon={<AiOutlineMail size={25} />} url={''} />
+                        <Icon reactIcon={<BsPersonLinesFill size={25} />} url={''} />
                     </div>
                 </div>
             </div>
