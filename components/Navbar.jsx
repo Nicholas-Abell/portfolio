@@ -38,7 +38,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
     }
 
     return (
-        <div className={shadow ? `w-full fixed h-20 shadow-xl dark:shadow-gray-400 z-[100] bg-[#ECF0F3] dark:bg-black dark:hover:shadow-red-600` : `w-full fixed h-20 z-[100] bg-[#ECF0F3] dark:bg-black`}>
+        <div className={shadow ? `w-full fixed h-20 shadow-xl dark:shadow-gray-400 z-[100] bg-[#ECF0F3] dark:bg-black dark:hover:shadow-red-600 hover:duration-200 ease-in` : `w-full fixed h-20 z-[100] bg-[#ECF0F3] dark:bg-black`}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <div className='flex items-center justify-center gap-4'>
                     <button onClick={() => handleNavClick(0, 0)} className='flex justify-center items-center gap-2 p-2 dark:text-gray-300 dark:hover:shadow-red-600 hover:shadow-md dark:hover:text-red-600 ease-in duration-200'>
