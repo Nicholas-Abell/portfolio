@@ -74,7 +74,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='flex justify-center py-12'>
-                    <div onClick={scrollToTop} className='dark:text-white hover:text-[#1251ff] hover:shadow-[#8a2be2] dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-md cursor-pointer ease-in hover:duration-200'>
+                    <div onClick={scrollToTop} className='neon rounded-full cursor-pointer p-3'>
                         <HiChevronDoubleUp size={30} className='m-auto ' />
                     </div>
                 </div>

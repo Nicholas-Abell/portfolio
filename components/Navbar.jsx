@@ -41,7 +41,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
         <div className={shadow ? `w-full fixed h-20 shadow-xl dark:shadow-gray-400 z-[100] bg-[#ECF0F3] dark:bg-black dark:hover:shadow-red-600 hover:duration-200 ease-in` : `w-full fixed h-20 z-[100] bg-[#ECF0F3] dark:bg-black`}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <div className='flex items-center justify-center gap-4'>
-                    <button onClick={() => handleNavClick(0, 0)} className='flex justify-center items-center gap-2 p-2 hover:text-[#1251ff] dark:text-gray-300 dark:hover:shadow-red-600 hover:shadow-md hover:shadow-[#8a2be2] dark:hover:text-red-600 ease-in duration-200'>
+                    <button onClick={() => handleNavClick(0, 0)} className='flex justify-center items-center gap-2 p-2 neon'>
                         <FaHome size={25} className='w-full h-full' />
                         <h3>Home</h3>
                     </button>
@@ -71,7 +71,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                     : 'fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md-[45%] h-screen bg-white p-10 ease-in duration-500'}>
                     <div className='w-full flex justify-between items-center p-4 border-b-2 border-gray-400'>
                         <h1 className='dark:text-gray-100 text-black'>Nick A</h1>
-                        <div onClick={handleMobileNav} className='dark:text-white hover:text-[#1251ff] hover:shadow-[#8a2be2] dark:hover:text-red-600 dark:bg-black rounded-full shadow-lg shadow-gray-400 dark:hover:shadow-red-600 p-3 hover:shadow-md cursor-pointer ease-in hover:duration-200'>
+                        <div onClick={handleMobileNav} className='neon p-3 rounded-full cursor-pointer'>
                             <AiOutlineClose />
                         </div>
                     </div>

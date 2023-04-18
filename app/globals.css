@@ -7,7 +7,7 @@ html {
 }
 
 .neon {
-  @apply dark:text-gray-300 hover:text-[#1251ff] dark:hover:text-red-600 dark:bg-black shadow-lg shadow-gray-400 hover:shadow-[#8a2be2] dark:hover:shadow-red-600 p-3 hover:shadow-md cursor-pointer ease-in hover:duration-200
+  @apply dark:text-gray-300 hover:text-[#1251ff] dark:hover:text-red-600 dark:bg-black shadow-lg shadow-gray-400 hover:shadow-[#8a2be2] dark:hover:shadow-red-600 hover:shadow-md ease-in hover:duration-200
 }
 
 @layer base {
