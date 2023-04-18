@@ -8,10 +8,8 @@ export const metadata = {
   description: 'Portfolio',
 }
 
-export const DarkModeContext = createContext();
-
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const html = document.querySelector('html');
