@@ -1,46 +1,89 @@
 import Image from 'next/image';
 import React from 'react';
+import Skill from '@/components/Skill';
+//react-icons
+import { AiFillGithub } from 'react-icons/ai';
+import { CgWebsite } from 'react-icons/cg';
+import { FaReact, FaSass } from 'react-icons/fa';
+//images
 import wordleImage from '../../assets/images/wordle_clone.jpeg'
-import { RiRadioButtonFill } from 'react-icons/ri';
 
 export default function SMSConstruction() {
     return (
-        <div className='w-full overflow-hidden'>
-            <div className='w-screen h-[50vh] relative'>
-                <div className='absolute top-0 left-0 w-full h-[50vh] z-10 bg-black/60' />
-                <Image src={wordleImage} className='absolute z-1' layout="fill" objectFit="cover" objectPosition="center" alt='/Movie Database' />
-                <div className='absolute text-white pl-8 z-40 top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                    <h2 className='py-2'>Wordle Game</h2>
-                    <h3>React Js</h3>
+        <div className='w-full overflow-hidden pt-20'>
+            <div className='w-screen h-[50vh] lg:h-[60vh] relative' style={{ backgroundColor: 'gray' }}>
+                <div className='absolute top-0 left-0 w-full h-[50vh] lg:h-[60vh] z-10 from-black bg-gradient-to-r ' />
+                <Image src={wordleImage} className='absolute z-1 top-0 object-top lg:object-center object-cover lg:object-contain ' layout="fill" alt='/Movie Database' />
+                <div className='absolute text-white dark:text-gray-300 pl-8 z-40 top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
+                    <h2 className='py-2'>SMS <br />Wordle Game</h2>
+                    <h3>React Js | SCSS</h3>
                 </div>
             </div>
-            <div className='mx-auto max-w-[1240px] grid md:grid-cols-5 gap-8 p-8'>
+            <div className='mx-auto max-w-[1240px] grid md:grid-cols-5 gap-8 p-8 dark:text-gray-300'>
                 <div className='col-span-4'>
-                    <p>Project</p>
-                    <h2>Overview</h2>
-                    <p className='py-4'>A clone of the popular game wordle.
+                    <p className='text-xl tracking-widest uppercase text-red-800 dark:text-red-500'>Project</p>
+                    <h2 className='dark:text-gray-400'>Overview</h2>
+                    <p className='py-4 dark:text-gray-300'>A clone of the popular game wordle.
                         <br />Guess a five letter word.
                         <br />Red: incorrect letter
                         <br />Yellow: correct letter wrong space
                         <br />Green: correct letter and space </p>
-                    <div className='flex items-center'>
-                        <button className='px-8 py-2 mt-4 mr-8 flex justify-center items-center gap-4'>
-                            <a href='https://nicholas-abell.github.io/wordle_clone/'>Live</a>
+                    <div className='flex items-center gap-4'>
+                        <button href='https://nicholas-abell.github.io/wordle_clone/' className='flex justify-center items-center gap-2 p-2 neon'>
+                            <CgWebsite size={25} className='w-full h-full' />
+                            <h3>Live</h3>
                         </button>
-                        <button className='px-8 py-2 mt-4 mr-8 flex justify-center items-center gap-4'>
-                            <a href='https://github.com/Nicholas-Abell/wordle_clone'>Github</a>
+                        <button href='https://github.com/Nicholas-Abell/wordle_clone' className='flex justify-center items-center gap-2 p-2 neon'>
+                            <AiFillGithub size={25} className='w-full h-full' />
+                            <h3>GITHUB</h3>
                         </button>
                     </div>
                 </div>
-                <div className=' col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 flex flex-col justify-between items-center'>
-                    <p className='text-center font-bold pb-2'>Technologies</p>
-                    <div>
-                        <p className='text-gray-600 py-2 flex items-center gap-4'>
-                            <RiRadioButtonFill /> React
-                        </p>
+                <div className='col-span-4 lg:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 flex flex-col justify-between items-center neon gap-4'>
+                    <p className='uppercase tracking-widest font-bold lg:tracking-normal text-red-800 dark:text-red-500'>Technologies</p>
+                    <div className='grid grid-cols-3 lg:grid-cols-1 justify-center items-center gap-4 text-black dark:text-gray-300'>
+                        <Skill icon={<FaReact size={25} />} title='React' />
+                        <Skill icon={<FaSass size={25} />} title='SCSS' />
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
+        // <div className='w-full overflow-hidden'>
+        //     <div className='w-screen h-[50vh] relative'>
+        //         <div className='absolute top-0 left-0 w-full h-[50vh] z-10 bg-black/60' />
+        //         <Image src={wordleImage} className='absolute z-1' layout="fill" objectFit="cover" objectPosition="center" alt='/Movie Database' />
+        //         <div className='absolute text-white pl-8 z-40 top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
+        //             <h2 className='py-2'>Wordle Game</h2>
+        //             <h3>React Js</h3>
+        //         </div>
+        //     </div>
+        //     <div className='mx-auto max-w-[1240px] grid md:grid-cols-5 gap-8 p-8'>
+        //         <div className='col-span-4'>
+        //             <p>Project</p>
+        //             <h2>Overview</h2>
+        //             <p className='py-4'>A clone of the popular game wordle.
+        //                 <br />Guess a five letter word.
+        //                 <br />Red: incorrect letter
+        //                 <br />Yellow: correct letter wrong space
+        //                 <br />Green: correct letter and space </p>
+        //             <div className='flex items-center'>
+        //                 <button className='px-8 py-2 mt-4 mr-8 flex justify-center items-center gap-4'>
+        //                     <a href='https://nicholas-abell.github.io/wordle_clone/'>Live</a>
+        //                 </button>
+        //                 <button className='px-8 py-2 mt-4 mr-8 flex justify-center items-center gap-4'>
+        //                     <a href='https://github.com/Nicholas-Abell/wordle_clone'>Github</a>
+        //                 </button>
+        //             </div>
+        //         </div>
+        //         <div className=' col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 flex flex-col justify-between items-center'>
+        //             <p className='text-center font-bold pb-2'>Technologies</p>
+        //             <div>
+        //                 <p className='text-gray-600 py-2 flex items-center gap-4'>
+        //                     <RiRadioButtonFill /> React
+        //                 </p>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </div>
     )
 }
