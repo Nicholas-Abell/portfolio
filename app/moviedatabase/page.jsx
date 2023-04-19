@@ -2,8 +2,11 @@
 import Image from 'next/image';
 import React from 'react';
 import { AiFillGithub } from 'react-icons/ai';
-import { RiRadioButtonFill } from 'react-icons/ri';
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from 'react-icons/fa';
+import { SiJavascript, SiTailwindcss, SiFirebase } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
 import MovieDatabaseImg from '../../assets/images/movie_database.png';
+import Skill from '@/components/Skill';
 
 export default function MovieDatabase() {
     return (
@@ -18,7 +21,7 @@ export default function MovieDatabase() {
             </div>
             <div className='mx-auto max-w-[1240px] grid md:grid-cols-5 gap-8 p-8 dark:text-gray-300'>
                 <div className='col-span-4'>
-                    <p className='text-red-600 dark:text-red-400'>Project</p>
+                    <p className='text-xl tracking-widest uppercase text-red-800 dark:text-red-500'>Project</p>
                     <h2 className='dark:text-gray-400'>Overview</h2>
                     <p className='py-4 dark:text-gray-300'>Curious about new and upcoming moves? Looking for a classic and wonder which streaming service to watch it on?
                         This website solves these issues in a single website. Inspired by Netflix's design. This uses the IMDB database
@@ -34,18 +37,12 @@ export default function MovieDatabase() {
                         </button>
                     </div>
                 </div>
-                <div className=' col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 flex flex-col justify-between items-center neon'>
-                    <p className='text-center font-bold py-2'>Technologies</p>
-                    <div>
-                        <p className='text-gray-600 py-2 flex items-center gap-4'>
-                            <RiRadioButtonFill /> React
-                        </p>
-                        <p className='text-gray-600 py-2 flex items-center gap-4'>
-                            <RiRadioButtonFill /> Tailwind
-                        </p>
-                        <p className='text-gray-600 py-2 flex items-center gap-4'>
-                            <RiRadioButtonFill /> Firebase
-                        </p>
+                <div className='col-span-4 lg:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 flex flex-col justify-between items-center neon gap-4'>
+                    <p className='uppercase tracking-widest font-bold lg:tracking-normal text-red-800 dark:text-red-500'>Technologies</p>
+                    <div className='grid grid-cols-3 lg:grid-cols-1 justify-center items-center gap-4 text-black dark:text-gray-300'>
+                        <Skill icon={<FaReact size={25} />} title='React' />
+                        <Skill icon={<SiTailwindcss size={25} />} title='Tailwind' />
+                        <Skill icon={<SiFirebase size={25} />} title='Firebase' />
                     </div>
                 </div>
             </div>
