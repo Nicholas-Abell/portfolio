@@ -12,7 +12,7 @@ import SMSImage from '../../assets/images/sms_construction.png'
 export default function SMSConstruction() {
     return (
         <div className='w-full overflow-hidden pt-20'>
-            <div className='w-screen h-[50vh] relative'>
+            <div className='w-screen h-[50vh] relative text-gray-300'>
                 <div className='absolute top-0 left-0 w-full h-[50vh] z-10 from-black bg-gradient-to-r' />
                 <Image src={SMSImage} className='absolute z-1 top-0 object-top lg:object-center object-cover' layout="fill" objectFit="cover" alt='/Movie Database' />
                 <div className='absolute text-white dark:text-gray-300 pl-8 z-40 top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
@@ -24,7 +24,7 @@ export default function SMSConstruction() {
                 <div className='col-span-4'>
                     <p className='text-xl tracking-widest uppercase text-red-800 dark:text-red-500'>Project</p>
                     <h2 className='dark:text-gray-400'>Overview</h2>
-                    <p className='py-4 dark:text-gray-300'>A landing page I built for a client. A local handyman site I made using react and tailwind.
+                    <p className='py-8 dark:text-gray-300'>A landing page I built for a client. A local handyman site I made using react and tailwind.
                         Currently hosted on Hostinger. I learned a lot about SEO and google analytics making this project.</p>
                     <div className='flex items-center gap-4'>
                         <a href='https://smsconstructionandremodeling.com/' className='flex justify-center items-center gap-2 p-2 shadow-lg hover:shadow-xl shadow-gray-400 rounded-xl uppercase neon'>
