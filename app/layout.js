@@ -12,6 +12,11 @@ export default function RootLayout({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setIsDarkMode(prefersDarkMode);
+  }, []);
+
+  useEffect(() => {
     const html = document.querySelector('html');
     if (isDarkMode) {
       html.classList.add('dark');
