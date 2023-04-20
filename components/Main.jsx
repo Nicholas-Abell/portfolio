@@ -2,7 +2,7 @@
 import React from 'react';
 import Icon from './Icon';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { BsPersonLinesFill, BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
+import { BsPersonLinesFill } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Main = () => {
@@ -26,7 +26,7 @@ const Main = () => {
                         <Icon reactIcon={<FaGithub size={25} />} url={'https://github.com/Nicholas-Abell'} />
                         <Icon reactIcon={<FaLinkedin size={25} />} url={'https://www.linkedin.com/in/nicholas-abell-348807192/'} />
                         <Icon reactIcon={<AiOutlineMail size={25} />} url={''} />
-                        <Icon reactIcon={<BsPersonLinesFill size={25} />} url={''} />
+                        <Icon reactIcon={<BsPersonLinesFill size={25} />} url={'/resume'} />
                     </div>
                 </div>
             </div>
@@ -35,4 +35,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Main;
