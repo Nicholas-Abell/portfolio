@@ -20,15 +20,10 @@ const Projects = () => {
                     info='Find Which streaming servive has your favorite movies.'
                 />
                 <Project
-                    title='SMS Construction & Remodeling'
+                    title='SMS Construction'
                     img={smsConstruction} projectURL='/smsconstruction'
                     info='A landing page that I built for a client. 
                     The page is currently hosted on Hostinger'
-                />
-                <Project
-                    title='Vacation Landing Page'
-                    img={vacationLandingPage} projectURL='/vacation'
-                    info='A landing page built with React and styled with tailwind.'
                 />
                 <Project
                     title='Wordle Game'

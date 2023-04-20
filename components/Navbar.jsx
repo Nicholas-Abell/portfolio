@@ -56,10 +56,10 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                     </button>
                 </div>
                 <ul className='hidden md:flex dark:text-gray-100'>
-                    <li onClick={() => handleNavClick('about')} className='ml-10 uppercase dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>About Me</li>
-                    <li onClick={() => handleNavClick('skills')} className='ml-10 uppercase dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>Skills</li>
-                    <li onClick={() => handleNavClick('projects')} className='ml-10 uppercase dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>Projects</li>
-                    <li onClick={() => handleNavClick('contact')} className='ml-10 uppercase dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>Contact</li>
+                    <li onClick={() => handleNavClick('about')} className='ml-10 uppercase hover:text-[#1251ff] dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>About Me</li>
+                    <li onClick={() => handleNavClick('skills')} className='ml-10 uppercase hover:text-[#1251ff] dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>Skills</li>
+                    <li onClick={() => handleNavClick('projects')} className='ml-10 uppercase hover:text-[#1251ff] dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>Projects</li>
+                    <li onClick={() => handleNavClick('contact')} className='ml-10 uppercase hover:text-[#1251ff] dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>Contact</li>
                 </ul>
                 <div onClick={handleMobileNav} className='md:hidden'>
                     <AiOutlineMenu size={25} className='cursor-pointer dark:text-white dark:hover:text-red-600 ease-in duration-200' />
