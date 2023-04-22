@@ -4,8 +4,8 @@ import { RxDot } from 'react-icons/rx';
 
 export default function Resume() {
     return (
-        <div className="bg-gray-100 text-gray-900 pt-20 flex print-ready">
-            <div className='w-[30vh] bg-blue-500 dark:bg-red-700 text-white py-4'>
+        <div className="bg-gray-100 dark:bg-black text-gray-900 dark:text-gray-300 pt-20 flex print:pt-0 print:scale-70">
+            <div className='w-[30vh] bg-blue-500 dark:bg-red-700 text-white dark:text-gray-300 py-4'>
                 <div className='p-2'>
                     <h2>Nick Abell</h2>
                     <p>Front End Developer</p>
@@ -21,19 +21,19 @@ export default function Resume() {
                         </li>
                         <li>
                             <h3 className='py-2 underline'>Email</h3>
-                            <p className='text-gray-100'>darkforceyoda@gmail.com</p>
+                            <p className='text-gray-100 text-xs'>darkforceyoda@gmail.com</p>
                         </li>
                         <li>
                             <h3 className='py-2 underline'>GitHub</h3>
-                            <a href='https://github.com/Nicholas-Abell' className='text-gray-100 text-sm'>https://github.com/Nicholas-Abell</a>
+                            <a href='https://github.com/Nicholas-Abell' className='text-gray-100 text-xs'>https://github.com/Nicholas-Abell</a>
                         </li>
                         <li>
                             <h3 className='py-2 underline'>LinkedIn</h3>
-                            <a className='text-gray-100 text-sm'>https://www.linkedin.com/in/nicholas-abell-348807192/</a>
+                            <a href='https://www.linkedin.com/in/nicholas-abell-348807192/' className='text-gray-100 text-xs'>https://www.linkedin.com/in/nicholas-abell-348807192/</a>
                         </li>
                     </ul>
                 </div>
-                <div className='dark:bg-red-900g p-2 my-2 w-full'>
+                <div className='bg-blue-800 dark:bg-red-900 p-2 my-2 w-full'>
                     <h3 className='font-extrabold'>Skills</h3>
                 </div>
                 <div className='py-2'>
@@ -66,7 +66,8 @@ export default function Resume() {
             <div className="flex flex-col w-full">
                 <div className='px-8 pt-4'>
                     <p>
-                        A shipping/recieving clerk with an aptitude for technical learning. Having built several websites and web based applications I would like to turn my passion into a career.
+                        A software developer looking to expand his resume. I make mobile responsive websites primarily using react js and tailwind css, but am always excited to learn new frameworks or tech stacks.
+                        I have excelled in my current work place for eleven years and am looking to switch to software development full time.
                     </p>
                 </div>
                 <div className='w-full mt-4 border-t-2 border-b-2 my-8 border-gray-300'>
@@ -74,7 +75,7 @@ export default function Resume() {
                 </div>
                 <div className='pl-8 pb-8'>
                     <div className="w-full">
-                        <div className='flex gap-32'>
+                        <div className='flex flex-col sm:flex-row sm:gap-6 md:gap-12 lg:gap-32 print:gap-12'>
                             <h3 className="text-xl font-semibold mb-4">2011-<br />present</h3>
                             <div className='flex flex-col gap-8'>
                                 <div>
@@ -82,13 +83,16 @@ export default function Resume() {
                                     <h3 className='text-red-700 text-2xl'>Valeo</h3>
                                 </div>
                                 <ul className='flex flex-col gap-4'>
-                                    <li>
+                                    <li className='flex items-center'>
+                                        <RxDot />
                                         <p>Record Data using Google Sheets, VBA, and Javascript</p>
                                     </li>
-                                    <li>
+                                    <li className='flex items-center'>
+                                        <RxDot />
                                         <p>Use Barflow and SAP to recieve millions of dollars worth of product daily</p>
                                     </li>
-                                    <li>
+                                    <li className='flex items-center'>
+                                        <RxDot />
                                         <p>Direct Semi drivers to proper location.</p>
                                     </li>
                                 </ul>
@@ -98,7 +102,7 @@ export default function Resume() {
                 </div>
                 <div className='pl-8 pb-8'>
                     <div className="w-full">
-                        <div className='flex gap-32'>
+                        <div className='flex flex-col sm:flex-row sm:gap-6 md:gap-12 lg:gap-32 print:gap-12'>
                             <h3 className="text-xl font-semibold mb-4">2022-<br />present</h3>
                             <div className='flex flex-col gap-8'>
                                 <div>
@@ -106,13 +110,16 @@ export default function Resume() {
                                     <h3 className='text-red-700 text-2xl'>Freelance</h3>
                                 </div>
                                 <ul className='flex flex-col gap-4'>
-                                    <li>
+                                    <li className='flex items-center'>
+                                        <RxDot />
                                         <p>Built a responsive website for a small local business</p>
                                     </li>
-                                    <li>
+                                    <li className='flex items-center'>
+                                        <RxDot />
                                         <p>Hosted the site on Hostinger, and purchased domain name.</p>
                                     </li>
-                                    <li>
+                                    <li className='flex items-center'>
+                                        <RxDot />
                                         <p>Made sure the site was accessible via the most popular search engines using SEO practices</p>
                                     </li>
                                 </ul>
@@ -125,7 +132,7 @@ export default function Resume() {
                 </div>
                 <div className='pl-8 pb-8'>
                     <div className="w-full">
-                        <div className='flex gap-32'>
+                        <div className='flex flex-col sm:flex-row sm:gap-6 md:gap-12 lg:gap-32 print:gap-12'>
                             <h3 className="text-xl font-semibold mb-4">2011-<br />present</h3>
                             <div className='flex flex-col gap-8'>
                                 <div>
@@ -133,7 +140,8 @@ export default function Resume() {
                                     <h3 className='text-red-700 text-2xl'>Jennings County High School</h3>
                                 </div>
                                 <ul className='flex flex-col gap-4'>
-                                    <li>
+                                    <li className='flex items-center'>
+                                        <RxDot />
                                         <p>School News Paper Editor</p>
                                     </li>
                                 </ul>
