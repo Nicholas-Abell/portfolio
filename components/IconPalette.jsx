@@ -5,9 +5,10 @@ import { BsPersonLinesFill } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai';
 import { HiChevronDoubleUp } from 'react-icons/hi';
 
-const IconPalette = () => {
+const IconPalette = ({ setMobileNav, nav }) => {
 
     const scrollToEmailForm = (id) => {
+        nav ? setMobileNav(false) : null;
         const skillsElement = document.getElementById(id);
         const offset = 90;
         const yCoordinate = skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;

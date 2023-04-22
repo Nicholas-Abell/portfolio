@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { AiOutlineMenu, AiOutlineCloseg } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaHome } from 'react-icons/fa';
 import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 import IconPalette from './IconPalette';
@@ -86,7 +86,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                     <div className='pt-40'>
                         <p>Let's Connect</p>
                     </div>
-                    <IconPalette />
+                    <IconPalette nav={true} setMobileNav={setMobileNav} />
                 </div>
             </div>
         </div >
