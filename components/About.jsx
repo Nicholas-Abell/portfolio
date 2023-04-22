@@ -14,7 +14,7 @@ const About = () => {
                         I have excelled in my current work place for eleven years and am looking to switch to software development full time.
                     </p>
                 </div>
-                <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 dark:hover:shadow-red-600 rounded-xl flex items-center justify-center p-12 lg:p-4 hover:scale-105 duration-300 neon'>
+                <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 dark:hover:shadow-red-600 rounded-xl flex items-center justify-center p-12 md:p-4 md:hover:scale-105 duration-300 neon'>
                     <Image src={profileTwo} className='rounded-xl' />
                 </div>
             </div>
