@@ -1,9 +1,6 @@
 'use client';
 import React from 'react';
-import Icon from './Icon';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { BsPersonLinesFill } from 'react-icons/bs'
-import { AiOutlineMail } from 'react-icons/ai';
+import IconPalette from './IconPalette';
 
 const Main = () => {
     return (
@@ -20,14 +17,9 @@ const Main = () => {
                         </span>
                     </h1>
                     <p className='py-4 dark:text-gray-300 text-gray-600 max-w-[70%] m-auto'>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate cumque ipsam animi ratione mollitia laudantium qui veritatis, quaerat libero recusandae consequuntur quibusdam voluptatum aut, unde distinctio alias. Numquam, ab voluptates.
+                        A front end developer looking to make a difference on your next project.
                     </p>
-                    <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                        <Icon reactIcon={<FaGithub size={25} />} url={'https://github.com/Nicholas-Abell'} />
-                        <Icon reactIcon={<FaLinkedin size={25} />} url={'https://www.linkedin.com/in/nicholas-abell-348807192/'} />
-                        <Icon reactIcon={<AiOutlineMail size={25} />} url={''} />
-                        <Icon reactIcon={<BsPersonLinesFill size={25} />} url={'/resume'} />
-                    </div>
+                    <IconPalette />
                 </div>
             </div>
 

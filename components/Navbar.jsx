@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import Icon from './Icon';
 import Link from 'next/link';
-import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
-import { FaLinkedin, FaGithub, FaHome } from 'react-icons/fa';
-import { BsPersonLinesFill, BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+import { AiOutlineMenu, AiOutlineCloseg } from 'react-icons/ai';
+import { FaHome } from 'react-icons/fa';
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+import IconPalette from './IconPalette';
 
 const Navbar = ({ toggleDarkMode, isDarkMode }) => {
     const [mobileNav, setMobileNav] = useState(false);
@@ -86,12 +86,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                     <div className='pt-40'>
                         <p>Let's Connect</p>
                     </div>
-                    <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                        <Icon reactIcon={<FaGithub size={25} />} url={'https://github.com/Nicholas-Abell'} />
-                        <Icon reactIcon={<FaLinkedin size={25} />} url={'https://www.linkedin.com/in/nicholas-abell-348807192/'} />
-                        <Icon reactIcon={<AiOutlineMail size={25} />} url={''} />
-                        <Icon reactIcon={<BsPersonLinesFill size={25} />} url={''} />
-                    </div>
+                    <IconPalette />
                 </div>
             </div>
         </div >

@@ -12,10 +12,6 @@ html {
     {
         @apply hidden
     }
-
-    .print-ready{
-      @apply pt-0
-    }
 }
 
 .neon {

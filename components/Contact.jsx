@@ -1,12 +1,9 @@
 'use client';
 import React from 'react';
-import Icon from './Icon';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { BsPersonLinesFill } from 'react-icons/bs'
-import { AiOutlineMail } from 'react-icons/ai';
 import { HiChevronDoubleUp } from 'react-icons/hi';
 import profileImg from '../assets/images/profile.jpg';
 import Image from 'next/image';
+import IconPalette from './IconPalette';
 
 
 const Contact = () => {
@@ -32,16 +29,11 @@ const Contact = () => {
                             </div>
                             <div>
                                 <p className='uppercase pt-12 text-center dark:text-gray-300'>Connect With Me</p>
-                                <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                                    <Icon reactIcon={<FaGithub size={25} />} url={'https://github.com/Nicholas-Abell'} />
-                                    <Icon reactIcon={<FaLinkedin size={25} />} url={'https://www.linkedin.com/in/nicholas-abell-348807192/'} />
-                                    <Icon reactIcon={<AiOutlineMail size={25} />} url={''} />
-                                    <Icon reactIcon={<BsPersonLinesFill size={25} />} url={''} />
-                                </div>
+                                <IconPalette />
                             </div>
                         </div>
                     </div>
-                    <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 dark:text-gray-400'>
+                    <div id='contact' className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 dark:text-gray-400'>
                         <div className='p-4'>
                             <form action="https://formsubmit.co/darkforceyoda@gmail.com" method="POST">
                                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
