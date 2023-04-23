@@ -41,7 +41,7 @@ export default function Resume() {
                     <div className='px-4 flex flex-col gap-2 text-gray-100'>
                         <h3 className='flex items-center'><RxDot />HTML</h3>
                         <h3 className='flex items-center'><RxDot />CSS / SCSS</h3>
-                        <h3 className='flex items-center'><RxDot />Javascript / Typescripy</h3>
+                        <h3 className='flex items-center'><RxDot />Javascript / Typescript</h3>
                         <h3 className='flex items-center'><RxDot />React</h3>
                         <h3 className='flex items-center'><RxDot />Next Js</h3>
                     </div>
