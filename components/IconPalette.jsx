@@ -8,17 +8,22 @@ import { AiOutlineMail } from 'react-icons/ai';
 const IconPalette = ({ setMobileNav, nav }) => {
 
     const scrollToEmailForm = (id) => {
-        nav ? setMobileNav(false) : null
+        nav ? setMobileNav(false) : null;
         const skillsElement = document.getElementById(id);
         if (skillsElement) {
             const offset = 90;
             const yCoordinate = skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;
             window.scrollTo({ top: yCoordinate, behavior: 'smooth' });
-        } else {git 
+        } else {
+            git
             window.location.href = '/';
         }
     }
 
+    const showResume = () => {
+        nav ? setMobileNav(false) : null;
+        window.location.href = '/resume';
+    }
 
     return (
         <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
@@ -27,8 +32,10 @@ const IconPalette = ({ setMobileNav, nav }) => {
             <div onClick={() => scrollToEmailForm('email')} className='neon rounded-full cursor-pointer p-3'>
                 <AiOutlineMail size={25} />
             </div>
-            <Icon reactIcon={<BsPersonLinesFill size={25} />} url={'/resume'} />
-        </div>
+            <div onClick={showResume} className='neon rounded-full cursor-pointer p-3'>
+                <BsPersonLinesFill size={25} />
+            </div>
+        </div >
     )
 }
 
