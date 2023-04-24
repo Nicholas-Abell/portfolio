@@ -14,7 +14,7 @@ export default function SMSConstruction() {
         <div className='w-full overflow-hidden pt-20'>
             <div className='w-screen h-[50vh] relative text-gray-300'>
                 <div className='absolute top-0 left-0 w-full h-[50vh] z-10 from-black bg-gradient-to-r' />
-                <Image src={SMSImage} className='absolute z-1 top-0 object-top lg:object-center object-cover' layout="fill" objectFit="cover" alt='/Movie Database' />
+                <Image src={SMSImage} className='absolute z-1 top-0 object-top lg:object-center object-cover' fill style={{ objectFit: 'cover' }} alt='/Movie Database' />
                 <div className='absolute text-white dark:text-gray-300 pl-8 z-40 top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
                     <h2 className='py-2'>SMS <br /> Construction & Remodeling</h2>
                     <h3>React Js | Tailwind | Hostinger</h3>

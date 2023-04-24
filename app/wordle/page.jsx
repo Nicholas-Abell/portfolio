@@ -13,7 +13,7 @@ export default function SMSConstruction() {
         <div className='w-full overflow-hidden pt-20'>
             <div className='w-screen h-[50vh] lg:h-[60vh] relative text-gray-300' style={{ backgroundColor: 'gray' }}>
                 <div className='absolute top-0 left-0 w-full h-[50vh] lg:h-[60vh] z-10 from-black bg-gradient-to-r ' />
-                <Image src={wordleImage} className='absolute z-1 top-0 object-top lg:object-center object-cover lg:object-contain ' layout="fill" alt='/Movie Database' />
+                <Image src={wordleImage} className='absolute z-1 top-0 object-top lg:object-center object-cover lg:object-contain' fill alt='/Movie Database' />
                 <div className='absolute text-white dark:text-gray-300 pl-8 z-40 top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
                     <h2 className='py-2'>SMS <br />Wordle Game</h2>
                     <h3>React Js | SCSS</h3>

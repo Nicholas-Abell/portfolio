@@ -13,7 +13,7 @@ export default function MovieDatabase() {
         <div className='w-full overflow-hidden pt-20'>
             <div className='w-screen h-[50vh] lg:h-[60vh] relative text-gray-300'>
                 <div className='absolute top-0 left-0 w-full h-[50vh] lg:h-[60vh] z-10 from-black bg-gradient-to-r' />
-                <Image src={MovieDatabaseImg} className='absolute z-1 object-left-top' layout="fill" objectFit="cover" alt='/Movie Database' />
+                <Image src={MovieDatabaseImg} className='absolute z-1 object-left-top' fill style={{ objectFit: 'cover' }} alt='/Movie Database' />
                 <div className='absolute text-white dark:text-gray-300 pl-8 z-40 top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'>
                     <h2 className='py-2'>Movie Database</h2>
                     <h3>React Js | Tailwind | Firebase</h3>
