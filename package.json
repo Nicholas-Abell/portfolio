@@ -1,14 +1,18 @@
 {
-  "name": "my-app",
+  "name": "nicholas-abell",
+  "homepage": "https://Nicholas-Abell.github.io/portfolio/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
