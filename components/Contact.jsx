@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { HiChevronDoubleUp } from 'react-icons/hi';
-import profileImg from '../assets/images/profile.jpg';
+import profileImg from '../assets/images/profile.JPG';
 import Image from 'next/image';
 import IconPalette from './IconPalette';
 
@@ -21,7 +21,7 @@ const Contact = () => {
                     <div className='col-span-3 lg:col-span-2 shadow-xl shadow-gray-400 rounded-xl p-4 text-center'>
                         <div className='p-8 lg:p-4 h-full'>
                             <div className='w-full h-auto flex justify-center items-center'>
-                                <Image src={profileImg} className='w-[50%] lg:w-full rounded-xl hover:scale-105 ease-in duration-300' alt='/' />
+                                <Image src={profileImg} alt='profile' className='w-[50%] lg:w-full rounded-xl hover:scale-105 ease-in duration-300' />
                             </div>
                             <div className='py-8'>
                                 <h2 className='py-4 dark:text-red-600'>Nick Abell</h2>

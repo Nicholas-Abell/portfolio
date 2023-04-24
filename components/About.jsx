@@ -1,5 +1,5 @@
 import React from 'react';
-import profileTwo from '../assets/images/profile_about.jpg';
+import profileTwo from '../assets/images/profile_about.JPG';
 import Image from 'next/image';
 
 
@@ -15,11 +15,11 @@ const About = () => {
                     </p>
                 </div>
                 <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 dark:hover:shadow-red-600 rounded-xl flex items-center justify-center p-12 md:p-4 md:hover:scale-105 duration-300 neon'>
-                    <Image src={profileTwo} className='rounded-xl' />
+                    <Image src={profileTwo} alt='profile two' className='rounded-xl' />
                 </div>
             </div>
         </div>
     )
 }
 
-export default About
+export default About;
