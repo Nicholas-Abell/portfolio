@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { HiChevronDoubleUp } from 'react-icons/hi';
-import profileImg from '../assets/images/profile.JPG';
+import profileImg from '../assets/images/everdell.png';
 import Image from 'next/image';
 import IconPalette from './IconPalette';
 

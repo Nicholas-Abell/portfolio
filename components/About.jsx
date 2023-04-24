@@ -1,5 +1,5 @@
 import React from 'react';
-import profileTwo from '../assets/images/profile_about.JPG';
+import profileTwo from '../assets/images/everdell.png';
 import Image from 'next/image';
 
 
