@@ -26,6 +26,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
     const handleNavClick = (id) => {
         if (window.location.pathname !== '/') {
             window.location.href = '/';
+            
         }
         else if (id) {
             const skillsElement = document.getElementById(id);
@@ -55,7 +56,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                         <h3>Theme</h3>
                     </button>
                 </div>
-                <ul className='hidden md:flex dark:text-gray-100'>
+                <ul className='hidden md:flex dark:text-gray-100 font-bold'>
                     <li onClick={() => handleNavClick('about')} className='ml-10 uppercase hover:text-[#1251ff] dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>About Me</li>
                     <li onClick={() => handleNavClick('skills')} className='ml-10 uppercase hover:text-[#1251ff] dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>Skills</li>
                     <li onClick={() => handleNavClick('projects')} className='ml-10 uppercase hover:text-[#1251ff] dark:hover:red-600 dark:hover:text-red-600 cursor-pointer'>Projects</li>

@@ -25,7 +25,7 @@ export default function Everdell() {
                     <h2 className='dark:text-gray-400'>Overview</h2>
                     <p className='py-8 dark:text-gray-300'>A score calculator for the worker placement / tableu building
                         board game Everdell. This is my first app, and is still used by me and my family today. Built in Unity and coded in C#.
-                        I have this hosted on github where many thankful board game enthusiest use my app.
+                        I have this hosted on Itch.io where many thankfull board game enthusiest use my app.
                     </p>
                     <div className='flex items-center gap-4'>
                         <a href='https://darkforceyoda.itch.io/everdell-companion-app' className='flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon'>
