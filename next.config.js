@@ -5,4 +5,15 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = {
+  // other Next.js configurations...
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    const paths = await defaultPathMap();
+    delete paths['/api/*']; // exclude API routes
+    return paths;
+  },
+};
+
