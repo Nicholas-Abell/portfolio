@@ -1,11 +1,7 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
-
-module.exports = {
   // other Next.js configurations...
   exportPathMap: async function (
     defaultPathMap,
@@ -17,3 +13,4 @@ module.exports = {
   },
 };
 
+module.exports = nextConfig;
