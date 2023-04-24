@@ -23,7 +23,7 @@ export default function Everdell() {
                 <div className='col-span-4'>
                     <p className='text-xl tracking-widest uppercase text-red-800 dark:text-red-500'>Project</p>
                     <h2 className='dark:text-gray-400'>Overview</h2>
-                    <p className='py-8 dark:text-gray-300'>A score calculator for the worker placement / tableu building
+                    <p className='py-8 dark:text-gray-300'>A score calculator for the worker placement / tableau building
                         board game Everdell. This is my first app, and is still used by me and my family today. Built in Unity and coded in C#.
                         I have this hosted on Itch.io where many thankfull board game enthusiest use my app.
                     </p>
