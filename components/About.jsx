@@ -1,5 +1,6 @@
 import React from 'react';
-gitimport Image from 'next/image';
+import profileTwo from '../assets/images/profile_2.jpg';
+import Image from 'next/image';
 
 
 const About = () => {
