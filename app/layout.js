@@ -3,11 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import './globals.css';
 
-export const metadata = {
-  title: 'Nicholas Abell',
-  description: 'Portfolio',
-}
-
 export default function RootLayout({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
