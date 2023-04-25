@@ -17,7 +17,7 @@ export default function Resume() {
                     <ul>
                         <li>
                             <h3 className='py-2 underline'>Portfolio</h3>
-                            <a className='text-gray-100 text-sm'>https://nicholas-abell-mr5i.vercel.app/</a>
+                            <a href='https://nicholas-abell-mr5i.vercel.app/' className='text-gray-100 text-sm'>https://nicholas-abell-mr5i.vercel.app/</a>
                         </li>
                         <li>
                             <h3 className='py-2 underline'>Phone #</h3>
@@ -98,7 +98,7 @@ export default function Resume() {
                                     </li>
                                     <li className='flex items-center'>
                                         <RxDot />
-                                        <p>Direct Semi drivers to proper location.</p>
+                                        <p>Direct semi drivers to proper location.</p>
                                     </li>
                                 </ul>
                             </div>
