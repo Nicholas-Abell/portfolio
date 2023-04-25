@@ -4,10 +4,13 @@ import Navbar from '@/components/Navbar';
 import './globals.css';
 
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(null);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    if (isDarkMode === null) {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme !== null) {
+      setIsDarkMode(storedTheme === 'dark');
+    } else {
       const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
       setIsDarkMode(prefersDarkMode);
     }
@@ -20,10 +23,11 @@ export default function RootLayout({ children }) {
     } else {
       html.classList.remove('dark');
     }
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(prevState => !prevState)
+    setIsDarkMode(prevState => !prevState);
   }
 
   return (
