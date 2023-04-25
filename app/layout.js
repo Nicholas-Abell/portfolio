@@ -17,12 +17,6 @@ export default function RootLayout({ children }) {
   }, []);
 
   useEffect(() => {
-    const html = document.querySelector('html');
-    if (isDarkMode) {
-      html.classList.add('dark');
-    } else {
-      html.classList.remove('dark');
-    }
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
 
@@ -31,7 +25,7 @@ export default function RootLayout({ children }) {
   }
 
   return (
-    <html lang="en">
+    <html lang="en" className={isDarkMode ? 'dark' : 'light'}>
       <body className='dark:bg-black bg-[#ECF0F3]'>
         <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         {children}
