@@ -16,8 +16,12 @@ export default function Resume() {
                 <div className='p-2 flex flex-col'>
                     <ul>
                         <li>
+                            <h3 className='py-2 underline'>Portfolio</h3>
+                            <a className='text-gray-100 text-sm'>https://nicholas-abell-mr5i.vercel.app/</a>
+                        </li>
+                        <li>
                             <h3 className='py-2 underline'>Phone #</h3>
-                            <p className='text-gray-100'>812-498-3866</p>
+                            <p className='text-gray-100 text-sm'>812-498-3866</p>
                         </li>
                         <li>
                             <h3 className='py-2 underline'>Email</h3>
@@ -44,6 +48,7 @@ export default function Resume() {
                         <h3 className='flex items-center'><RxDot />Javascript / Typescript</h3>
                         <h3 className='flex items-center'><RxDot />React</h3>
                         <h3 className='flex items-center'><RxDot />Next Js</h3>
+                        <h3 className='flex items-center'><RxDot />Tailwind CSS</h3>
                     </div>
                 </div>
                 <div className='py-2'>
