@@ -4,11 +4,13 @@ import Navbar from '@/components/Navbar';
 import './globals.css';
 
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(null);
 
   useEffect(() => {
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setIsDarkMode(prefersDarkMode);
+    if (isDarkMode === null) {
+      const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setIsDarkMode(prefersDarkMode);
+    }
   }, []);
 
   useEffect(() => {
