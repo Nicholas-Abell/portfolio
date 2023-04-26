@@ -40,7 +40,7 @@ export default function Everdell() {
                 </div>
                 <div className='col-span-5 lg:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 neon'>
                     <p className='mb-4 uppercase tracking-widest font-bold lg:tracking-normal text-red-800 dark:text-red-500 text-center'>Technologies</p>
-                    <div className='grid grid-cols-3 lg:grid-cols-1 gap-4 text-black dark:text-gray-300'>
+                    <div className='grid grid-cols-2 lg:grid-cols-1 gap-4 text-black dark:text-gray-300'>
                         <Skill icon={<BsUnity size={25} />} title='Unity' />
                         <Skill icon={<SiCsharp size={25} />} title='C#' />
                     </div>
