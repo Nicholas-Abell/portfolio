@@ -58,7 +58,7 @@ const Contact = () => {
                                     <label className='uppercase text-sm py-2'>Message</label>
                                     <textarea name='text-area' rows='10' className='border-2 rounded-lg p-3 flex border-gray-300 dark:border-red-900 dark:bg-gray-700 dark:text-gray-300' />
                                 </div>
-                                {/* <input type="hidden" name="_next" value="/" /> */}
+                                <input type="hidden" name="_next" value="https://nicholas-abell-mr5i.vercel.app/" />
                                 <input type="hidden" name="_autoresponse" value="Thank you for contacting me. I will get in touch soon." />
                                 <button className='w-full my-4 p-4 hover:duration-200 ease-in text-gray-800 dark:text-gray-300 dark:hover:shadow-red-600 hover:shadow-md dark:hover:text-red-600'>Send Message</button>
                             </form>
