@@ -25,7 +25,7 @@ export default function Resume() {
                         </li>
                         <li>
                             <h3 className='py-2 underline'>Email</h3>
-                            <p className='text-gray-100 text-xs'>darkforceyoda@gmail.com</p>
+                            <p className='text-gray-100 text-xs'>nicholaswabell@gmail.com</p>
                         </li>
                         <li>
                             <h3 className='py-2 underline'>GitHub</h3>
