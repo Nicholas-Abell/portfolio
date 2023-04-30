@@ -6,15 +6,11 @@ import { FaHome } from 'react-icons/fa';
 import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 import IconPalette from './IconPalette';
 
-const Navbar = ({ toggleDarkMode, isDarkMode, setScrollLock }) => {
-    const [mobileNav, setMobileNav] = useState(false);
+const Navbar = ({ toggleDarkMode, isDarkMode, mobileNav, setMobileNav }) => {
     const [shadow, setShadow] = useState(false);
 
     const handleMobileNav = () => {
         setMobileNav(!mobileNav);
-        if (mobileNav) {
-            setScrollLock(true);
-        } else { setScrollLock(false) }
     }
 
     useEffect(() => {
@@ -28,19 +24,15 @@ const Navbar = ({ toggleDarkMode, isDarkMode, setScrollLock }) => {
 
     const handleNavClick = (id) => {
         if (window.location.pathname !== '/') {
-            setScrollLock(false);
             window.location.href = '/';
+
         }
         else if (id) {
-            setScrollLock(false);
             const skillsElement = document.getElementById(id);
             const offset = 90;
             const yCoordinate = skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;
             window.scrollTo({ top: yCoordinate, behavior: 'smooth' })
-        } else {
-            setScrollLock(false);
-            window.scrollTo(0, 0);
-        }
+        } else { window.scrollTo(0, 0); }
 
         setMobileNav(false);
     }

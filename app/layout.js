@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar';
 import './globals.css';
 
 export default function RootLayout({ children }) {
+  const [mobileNav, setMobileNav] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [scrollLock, setScrollLock] = useState(false);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
@@ -27,8 +27,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={isDarkMode ? 'dark' : 'light'}>
-      <body className='dark:bg-black bg-[#ECF0F3]' style={!scrollLock ? { overflow: 'hidden' } : { overflow: 'auto' }}>
-        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} setScrollLock={setScrollLock} />
+      <body className='dark:bg-black bg-[#ECF0F3]' style={mobileNav ? { overflow: 'hidden' } : { overflow: 'auto' }}>
+        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} mobileNav={mobileNav} setMobileNav={setMobileNav} />
         {children}
       </body>
     </html>
