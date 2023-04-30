@@ -5,7 +5,6 @@ import profileImg from '../assets/images/profile.png';
 import Image from 'next/image';
 import IconPalette from './IconPalette';
 
-
 const Contact = () => {
 
     const scrollToTop = () => {
