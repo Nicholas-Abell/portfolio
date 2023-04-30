@@ -6,12 +6,15 @@ import { FaHome } from 'react-icons/fa';
 import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 import IconPalette from './IconPalette';
 
-const Navbar = ({ toggleDarkMode, isDarkMode }) => {
+const Navbar = ({ toggleDarkMode, isDarkMode, setScrollLock }) => {
     const [mobileNav, setMobileNav] = useState(false);
     const [shadow, setShadow] = useState(false);
 
     const handleMobileNav = () => {
         setMobileNav(!mobileNav);
+        if (mobileNav) {
+            setScrollLock(true);
+        } else { setScrollLock(false) }
     }
 
     useEffect(() => {
@@ -25,15 +28,19 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
 
     const handleNavClick = (id) => {
         if (window.location.pathname !== '/') {
+            setScrollLock(false);
             window.location.href = '/';
-            
         }
         else if (id) {
+            setScrollLock(false);
             const skillsElement = document.getElementById(id);
             const offset = 90;
             const yCoordinate = skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;
             window.scrollTo({ top: yCoordinate, behavior: 'smooth' })
-        } else { window.scrollTo(0, 0); }
+        } else {
+            setScrollLock(false);
+            window.scrollTo(0, 0);
+        }
 
         setMobileNav(false);
     }
@@ -68,7 +75,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
             </div>
             <div className={mobileNav ? 'md:hidden fixed left-0 top-0 bg-black/70 h-screen w-full' : 'hidden'}>
                 <div className={mobileNav
-                    ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md-[45%] h-screen dark:bg-black bg-white p-10 ease-in duration-500'
+                    ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md-[45%] h-screen dark:bg-black bg-white p-10'
                     : 'fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md-[45%] h-screen bg-white p-10 ease-in duration-500'}>
                     <div className='w-full flex justify-between items-center p-4 border-b-2 border-gray-400'>
                         <h1 className='dark:text-gray-100 text-black'>Nick A</h1>

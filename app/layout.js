@@ -5,6 +5,7 @@ import './globals.css';
 
 export default function RootLayout({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [scrollLock, setScrollLock] = useState(false);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
@@ -26,8 +27,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={isDarkMode ? 'dark' : 'light'}>
-      <body className='dark:bg-black bg-[#ECF0F3]'>
-        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+      <body className='dark:bg-black bg-[#ECF0F3]' style={!scrollLock ? { overflow: 'hidden' } : { overflow: 'auto' }}>
+        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} setScrollLock={setScrollLock} />
         {children}
       </body>
     </html>
