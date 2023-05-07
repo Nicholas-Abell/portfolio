@@ -6,7 +6,7 @@ import movieDatabase from '../assets/images/movie_database.png';
 import smsConstruction from '../assets/images/sms_construction.png';
 import wordleClone from '../assets/images/wordle_clone.jpeg';
 import everdell from '../assets/images/everdell_1.jpg';
-import reddit from '../assets/images/reddit.jpg'
+import reddit from '../assets/images/reddit_emblem.png';
 
 const Projects = () => {
     return (
@@ -39,8 +39,9 @@ const Projects = () => {
             </div>
             <p className='text-xl mt-24 tracking-widest uppercase text-red-800 dark:text-red-600'>Coming Soon</p>
             <h2 className='py-4 dark:text-gray-400'>My Current Project</h2>
-            <div className='w-full justify-center items-center md:px-32'>
+            <div className='grid md:grid-cols-4 px-4'>
                 <Project
+                    className='col-span-2 row-span-2 col-start-2'
                     title='Reddit Clone'
                     img={reddit} projectURL='/reddit'
                     info=''
