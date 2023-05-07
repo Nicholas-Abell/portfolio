@@ -11,7 +11,8 @@ const Skill = ({ icon, title }) => {
                     <h3>{title}</h3>
                 </div>
             </div>
-        </div>)
+        </div>
+    )
 }
 
 export default Skill;

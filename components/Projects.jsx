@@ -6,6 +6,7 @@ import movieDatabase from '../assets/images/movie_database.png';
 import smsConstruction from '../assets/images/sms_construction.png';
 import wordleClone from '../assets/images/wordle_clone.jpeg';
 import everdell from '../assets/images/everdell_1.jpg';
+import reddit from '../assets/images/reddit.jpg'
 
 const Projects = () => {
     return (
@@ -34,6 +35,15 @@ const Projects = () => {
                     title='Everdell Point Calculator'
                     img={everdell} projectURL='/everdell'
                     info='companion app for the board game'
+                />
+            </div>
+            <p className='text-xl mt-24 tracking-widest uppercase text-red-800 dark:text-red-600'>Coming Soon</p>
+            <h2 className='py-4 dark:text-gray-400'>My Current Project</h2>
+            <div className='w-full justify-center items-center md:px-32'>
+                <Project
+                    title='Reddit Clone'
+                    img={reddit} projectURL='/reddit'
+                    info=''
                 />
             </div>
         </div>
