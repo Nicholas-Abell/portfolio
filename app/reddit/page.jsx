@@ -25,9 +25,13 @@ export default function MovieDatabase() {
                     <h2 className='dark:text-gray-400'>Overview</h2>
                     <p className='py-8 dark:text-gray-300'>
                         A clone of the populer app Reddit. Made in React using TypeScript, styled with Tailwind CSS and Chakra UI.
+                        <br />
+                        Create Communities
+                        <br />
+                        Create Posts
                     </p>
                     <div className='flex items-center gap-4'>
-                        <a className='flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase text-red-600'>
+                    <a href='https://reddit-clone-4fg5-3bjm1il2l-nicholas-abell.vercel.app/' className='flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon'>
                             <CgWebsite size={25} className='w-full h-full' />
                             <h3>Live</h3>
                         </a>
