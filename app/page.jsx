@@ -1,8 +1,8 @@
-import Main from "@/components/Main";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
+import Main from "../components/Main.tsx";
+import About from "../components/About.tsx";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects.tsx";
+import Contact from "../components/Contact.tsx";
 
 export const metadata = {
   title: 'Nicholas Abell',
