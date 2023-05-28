@@ -7,10 +7,14 @@ type ProjectProps = {
   projectURL: string;
   img: StaticImageData;
   info: string;
-  className?: string;
 };
 
-const Project = ({ title, projectURL, img, info, className }: ProjectProps) => {
+const Project: React.FC<ProjectProps> = ({
+  title,
+  projectURL,
+  img,
+  info,
+}) => {
   return (
     <Link href={projectURL}>
       <div

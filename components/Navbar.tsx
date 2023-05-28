@@ -13,12 +13,12 @@ type NavbarProps = {
   setMobileNav: (arg: boolean) => void;
 };
 
-const Navbar = ({
+const Navbar: React.FC<NavbarProps> = ({
   toggleDarkMode,
   isDarkMode,
   mobileNav,
   setMobileNav,
-}: NavbarProps) => {
+}) => {
   const [shadow, setShadow] = useState(false);
 
   const handleMobileNav = () => {

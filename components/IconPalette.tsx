@@ -10,7 +10,7 @@ type IconPaletteProps = {
   nav?: boolean;
 };
 
-const IconPalette = ({ setMobileNav, nav }: IconPaletteProps) => {
+const IconPalette: React.FC<IconPaletteProps> = ({ setMobileNav, nav }) => {
   const scrollToEmailForm = (id: string) => {
     nav ? setMobileNav(false) : null;
     const skillsElement = document.getElementById(id);
