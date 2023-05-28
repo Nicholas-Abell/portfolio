@@ -41,7 +41,9 @@ const Navbar: React.FC<NavbarProps> = ({
       const skillsElement = document.getElementById(id);
       const offset = 90;
       const yCoordinate =
-        skillsElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        skillsElement!.getBoundingClientRect().top +
+        window.pageYOffset -
+        offset;
       window.scrollTo({ top: yCoordinate, behavior: "smooth" });
     } else {
       window.scrollTo(0, 0);

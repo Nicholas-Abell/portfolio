@@ -1,9 +1,13 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ReactNode } from "react";
 import Navbar from "../components/Navbar";
 import "./globals.css";
 
-export default function RootLayout({ children }) {
+type layoutProps = {
+  children: ReactNode;
+};
+
+export default function RootLayout({ children }: layoutProps) {
   const [mobileNav, setMobileNav] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
 
