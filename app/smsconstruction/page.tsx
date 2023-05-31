@@ -5,7 +5,7 @@ import Skill from "../../components/Skill";
 import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
 //images
 import SMSImage from "../../assets/images/sms_construction.png";
 
@@ -62,6 +62,7 @@ export default function SMSConstruction() {
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-1 gap-4 text-black dark:text-gray-300">
             <Skill icon={<FaReact size={25} />} title="React" />
+            <Skill icon={<SiTypescript size={25} />} title="Typescript" />
             <Skill icon={<SiTailwindcss size={25} />} title="Tailwind" />
           </div>
         </div>
