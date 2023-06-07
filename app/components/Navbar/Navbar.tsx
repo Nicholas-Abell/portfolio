@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaHome } from "react-icons/fa";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
-import IconPalette from "./IconPalette";
+import IconPalette from "../IconPalette";
 
 type NavbarProps = {
   toggleDarkMode: () => void;

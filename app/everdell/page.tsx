@@ -6,7 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsUnity } from "react-icons/bs";
 import { SiCsharp } from "react-icons/si";
 import everdell from "../../assets/images/everdell.png";
-import Skill from "../../components/Skill";
+import Skill from "../components/Skill";
 
 export default function Everdell() {
   return (

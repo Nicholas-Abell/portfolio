@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Skill from "../../components/Skill";
+import Skill from "../components/Skill";
 //react-icons
 import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
