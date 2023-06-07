@@ -11,6 +11,8 @@ import {
   SiTailwindcss,
   SiFirebase,
   SiTypescript,
+  SiMongodb,
+  SiRedux,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BsGit } from "react-icons/bs";
@@ -27,7 +29,9 @@ const Skills = () => {
           Skills
         </p>
         <h2 className="text-black dark:text-gray-400">What I Can Do</h2>
-        <h2 className="underline underline-offset-2">Front End</h2>
+        <h2 className="underline underline-offset-2 pt-8 text-gray-400">
+          Front End
+        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mt-12">
           <Skill
             title="Git"
@@ -70,8 +74,21 @@ const Skills = () => {
             icon={<FaBootstrap size={50} className="text-purple-600" />}
           />
           <Skill
+            title="Redux"
+            icon={<SiRedux size={50} className="text-purple-600" />}
+          />
+        </div>
+        <h2 className="underline underline-offset-2 pt-8 text-gray-400">
+          Back End
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mt-12">
+          <Skill
             title="Firebase"
             icon={<SiFirebase size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Mongo DB"
+            icon={<SiMongodb size={50} className="text-green-600" />}
           />
         </div>
       </div>
