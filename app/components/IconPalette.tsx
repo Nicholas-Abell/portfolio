@@ -45,12 +45,6 @@ const IconPalette: React.FC<IconPaletteProps> = ({ setMobileNav, nav }) => {
       >
         <AiOutlineMail size={25} />
       </div>
-      <div
-        onClick={showResume}
-        className="neon rounded-full cursor-pointer p-3"
-      >
-        <BsPersonLinesFill size={25} />
-      </div>
     </div>
   );
 };
