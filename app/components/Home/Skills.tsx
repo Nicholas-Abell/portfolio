@@ -13,6 +13,7 @@ import {
   SiTypescript,
   SiMongodb,
   SiRedux,
+  SiNodedotjs,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BsGit } from "react-icons/bs";
@@ -29,14 +30,16 @@ const Skills = () => {
           Skills
         </p>
         <h2 className="text-black dark:text-gray-400">What I Can Do</h2>
-        <h2 className="underline underline-offset-2 pt-8 text-gray-400">
-          Front End
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mt-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 my-12">
           <Skill
             title="Git"
             icon={<BsGit size={50} className="text-orange-600" />}
           />
+        </div>
+        <h2 className="underline underline-offset-2 pt-8 text-gray-400">
+          Front End
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mt-12">
           <Skill
             title="HTML"
             icon={<FaHtml5 size={50} className="text-[#E44D26]" />}
@@ -89,6 +92,10 @@ const Skills = () => {
           <Skill
             title="Mongo DB"
             icon={<SiMongodb size={50} className="text-green-600" />}
+          />
+          <Skill
+            title="Node Js"
+            icon={<SiNodedotjs size={50} className="text-blue-600" />}
           />
         </div>
       </div>
