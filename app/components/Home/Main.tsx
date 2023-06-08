@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import IconPalette from "../IconPalette";
+import { SiReact, SiTailwindcss, SiFirebase } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Main = () => {
   return (
@@ -10,8 +12,17 @@ const Main = () => {
     >
       <div className="relative max-w-[1240px] w-full h-full p-2 flex justify-center items-center">
         <div>
+          <div
+            className="flex justify-center items-center gap-2
+           text-gray-700"
+          >
+            <SiReact size={25} />
+            <TbBrandNextjs size={25} />
+            <SiTailwindcss size={25} />
+            <SiFirebase size={25} />
+          </div>
           <p className="uppercase text-sm tracking-widest pb-4 text-gray-600">
-            Looking to Improve your Company
+            Let me Improve your Company
           </p>
           <h1 className="dark:text-white text-gray-700">
             I'm
