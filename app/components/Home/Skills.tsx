@@ -95,7 +95,7 @@ const Skills = () => {
           />
           <Skill
             title="Node Js"
-            icon={<SiNodedotjs size={50} className="text-blue-600" />}
+            icon={<SiNodedotjs size={50} className="text-green-600" />}
           />
         </div>
       </div>

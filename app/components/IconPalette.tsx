@@ -30,7 +30,7 @@ const IconPalette: React.FC<IconPaletteProps> = ({ setMobileNav, nav }) => {
   };
 
   return (
-    <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+    <div className="flex items-center justify-between max-w-[200px] m-auto py-4">
       <Icon
         reactIcon={<FaGithub size={25} />}
         url={"https://github.com/Nicholas-Abell"}
