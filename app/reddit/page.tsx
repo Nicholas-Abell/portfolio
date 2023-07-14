@@ -41,7 +41,7 @@ export default function MovieDatabase() {
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="https://reddit-clone-4fg5-3bjm1il2l-nicholas-abell.vercel.app/"
+              href="reddit-clone-4fg5-git-main-nicholas-abell.vercel.app"
               className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon"
             >
               <CgWebsite size={25} className="w-full h-full" />
