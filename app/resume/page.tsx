@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import { RxDot } from "react-icons/rx";
 
@@ -17,12 +18,12 @@ export default function Resume() {
           <ul>
             <li>
               <h3 className="py-2 underline">Portfolio</h3>
-              <a
+              <Link
                 href="https://nicholas-abell-mr5i.vercel.app/"
                 className="text-gray-100 text-sm"
               >
                 https://nicholas-abell-mr5i.vercel.app/
-              </a>
+              </Link>
             </li>
             <li>
               <h3 className="py-2 underline">Phone #</h3>
@@ -34,21 +35,21 @@ export default function Resume() {
             </li>
             <li>
               <h3 className="py-2 underline">GitHub</h3>
-              <a
+              <Link
                 href="https://github.com/Nicholas-Abell"
                 className="text-gray-100 text-xs"
               >
                 https://github.com/Nicholas-Abell
-              </a>
+              </Link>
             </li>
             <li>
               <h3 className="py-2 underline">LinkedIn</h3>
-              <a
+              <Link
                 href="https://www.linkedin.com/in/nicholas-abell-348807192/"
                 className="text-gray-100 text-xs"
               >
                 https://www.linkedin.com/in/nicholas-abell-348807192/
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -8,6 +8,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 //images
 import SMSImage from "../../assets/images/sms_construction.png";
+import Link from "next/link";
 
 export default function SMSConstruction() {
   return (
@@ -40,20 +41,20 @@ export default function SMSConstruction() {
             lot about SEO and google analytics making this project.
           </p>
           <div className="flex items-center gap-4">
-            <a
+            <Link
               href="https://smsconstructionandremodeling.com/"
               className="flex justify-center items-center gap-2 p-2 shadow-lg hover:shadow-xl shadow-gray-400 rounded-xl uppercase neon"
             >
               <CgWebsite size={25} className="w-full h-full" />
               <h3>Live</h3>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/Nicholas-Abell/handy_man"
               className="flex justify-center items-center gap-2 p-2 shadow-lg hover:shadow-xl shadow-gray-400 rounded-xl uppercase neon"
             >
               <AiFillGithub size={25} className="w-full h-full" />
               <h3>GITHUB</h3>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 lg:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 neon">
