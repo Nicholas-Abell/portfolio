@@ -7,6 +7,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiFirebase, SiTypescript } from "react-icons/si";
 import reddit from "../../assets/images/reddit.jpg";
 import Skill from "../components/Skill";
+import Link from "next/link";
 
 export default function MovieDatabase() {
   return (
@@ -40,20 +41,20 @@ export default function MovieDatabase() {
             Create Posts
           </p>
           <div className="flex items-center gap-4">
-            <a
-              href="reddit-clone-4fg5-git-main-nicholas-abell.vercel.app"
+            <Link
+              href="https://reddit-clone-4fg5-git-main-nicholas-abell.vercel.app/"
               className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon"
             >
               <CgWebsite size={25} className="w-full h-full" />
               <h3>Live</h3>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/Nicholas-Abell/reddit_clone"
               className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon"
             >
               <AiFillGithub size={25} className="w-full h-full" />
               <h3>GITHUB</h3>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 lg:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 neon">
