@@ -7,6 +7,7 @@ import { BsUnity } from "react-icons/bs";
 import { SiCsharp } from "react-icons/si";
 import everdell from "../../assets/images/everdell.png";
 import Skill from "../components/Skill";
+import Link from "next/link";
 
 export default function Everdell() {
   return (
@@ -38,20 +39,20 @@ export default function Everdell() {
             Itch.io where many thankfull board game enthusiest use my app.
           </p>
           <div className="flex items-center gap-4">
-            <a
+            <Link
               href="https://darkforceyoda.itch.io/everdell-companion-app"
               className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon"
             >
               <CgWebsite size={25} className="w-full h-full" />
               <h3>Live</h3>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/Nicholas-Abell/Everdell-Point-Tracker"
               className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon"
             >
               <AiFillGithub size={25} className="w-full h-full" />
               <h3>GITHUB</h3>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 lg:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 neon">

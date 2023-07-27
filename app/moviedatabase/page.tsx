@@ -7,6 +7,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiFirebase } from "react-icons/si";
 import MovieDatabaseImg from "../../assets/images/movie_database.png";
 import Skill from "../components/Skill";
+import Link from "next/link";
 
 export default function MovieDatabase() {
   return (
@@ -39,20 +40,20 @@ export default function MovieDatabase() {
             Youtube api for trailers.
           </p>
           <div className="flex items-center gap-4">
-            <a
+            <Link
               href="https://movie-database-4bf43.web.app/"
               className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon"
             >
               <CgWebsite size={25} className="w-full h-full" />
               <h3>Live</h3>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/Nicholas-Abell/movie_database"
               className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase neon"
             >
               <AiFillGithub size={25} className="w-full h-full" />
               <h3>GITHUB</h3>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 lg:col-span-1 shadow-xl shadow-gray-400 rounded-xl px-4 py-12 neon">
