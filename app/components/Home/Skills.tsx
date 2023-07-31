@@ -65,10 +65,6 @@ const Skills = () => {
             icon={<FaReact size={50} className="text-blue-400" />}
           />
           <Skill
-            title="Next Js"
-            icon={<TbBrandNextjs size={50} className="dark:text-gray-300" />}
-          />
-          <Skill
             title="Tailwind CSS"
             icon={<SiTailwindcss size={50} className="text-[#0F7F7F]" />}
           />
@@ -96,6 +92,15 @@ const Skills = () => {
           <Skill
             title="Node Js"
             icon={<SiNodedotjs size={50} className="text-green-600" />}
+          />
+        </div>
+        <h2 className="underline underline-offset-2 pt-8 text-gray-400">
+          Full
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mt-12">
+          <Skill
+            title="Next Js"
+            icon={<TbBrandNextjs size={50} className="dark:text-gray-300" />}
           />
         </div>
       </div>
