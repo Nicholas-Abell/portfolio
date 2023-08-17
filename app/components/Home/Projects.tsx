@@ -7,6 +7,7 @@ import smsConstruction from "../../../assets/images/sms_construction.png";
 import wordleClone from "../../../assets/images/wordle_clone.jpeg";
 import everdell from "../../../assets/images/everdell_1.jpg";
 import reddit from "../../../assets/images/reddit_emblem.png";
+import thistlethorns from "../../../assets/images/Thistle&Thorns.png";
 
 const Projects = () => {
   return (
@@ -35,6 +36,13 @@ const Projects = () => {
           title="SMS Construction"
           img={smsConstruction}
           projectURL="/smsconstruction"
+          info="A landing page that I built for a client. 
+                    The page is currently hosted on Hostinger"
+        />
+        <Project
+          title="Thistle & Thorns Tattoos"
+          img={thistlethorns}
+          projectURL="/"
           info="A landing page that I built for a client. 
                     The page is currently hosted on Hostinger"
         />
