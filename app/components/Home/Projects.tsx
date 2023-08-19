@@ -43,8 +43,7 @@ const Projects = () => {
           title="Thistle & Thorns Tattoos"
           img={thistlethorns}
           projectURL="/"
-          info="A landing page that I built for a client. 
-                    The page is currently hosted on Hostinger"
+          info="Coming Soon. Landing page for a local Tattoo shop. Made using Squarespace."
         />
         <Project
           title="Wordle Game"
