@@ -4,11 +4,11 @@ Hello there, I'm Nicholas Abell, and I'm thrilled to have you here. This portfol
 
 ## Who Am I?
 
-I'm a creative problem solver and aspiring [Your Profession Here] with a deep love for all things tech. I thrive on turning ideas into reality and pushing the boundaries of what's possible.
+I'm a creative problem solver and aspiring software developer with a deep love for all things tech. I thrive on turning ideas into reality and pushing the boundaries of what's possible.
 
 ## Explore My Projects
 
-I invite you to dive into my projects and see firsthand the culmination of my dedication, creativity, and skills. From [Project A] to [Project Z], each endeavor reflects my unique approach and commitment to excellence.
+I invite you to dive into my projects and see firsthand the culmination of my dedication, creativity, and skills. From [Movie Database](https://movie-database-4bf43.web.app/) to [a reddit clone](http://reddit-clone-4fg5-git-main-nicholas-abell.vercel.app/), each endeavor reflects my unique approach and commitment to excellence.
 
 ## Making an Impact
 
@@ -16,7 +16,7 @@ My goal is simple: to make a meaningful difference. Whether it's through craftin
 
 ## Let's Collaborate!
 
-I'm excited about the potential to work together. If you're seeking a passionate [Your Skillset Here] for your next venture, look no further. Let's bring ideas to life, solve challenges, and create something remarkable.
+I'm excited about the potential to work together. If you're seeking a passionate software developer for your next venture, look no further. Let's bring ideas to life, solve challenges, and create something remarkable.
 
 ### Get in Touch
 
