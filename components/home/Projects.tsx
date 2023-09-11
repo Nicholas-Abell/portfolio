@@ -42,7 +42,7 @@ const Projects = () => {
         <Project
           title="Thistle & Thorns Tattoos"
           img={thistlethorns}
-          projectURL="/"
+          projectURL="/thistleandthorns"
           info="Coming Soon. Landing page for a local Tattoo shop. Made using Squarespace."
         />
         <Project
