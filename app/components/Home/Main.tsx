@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import IconPalette from "../IconPalette";
+import { IconPalette_lg } from "../shared/IconPalette";
 import { SiReact, SiTailwindcss, SiFirebase } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="w-full h-screen text-center flex justify-center items-center"
+      className="w-full h-[95vh] text-center flex justify-center items-center"
     >
       <div className="relative max-w-[1240px] w-full h-full p-2 flex justify-center items-center">
         <div>
@@ -24,17 +24,12 @@ const Main = () => {
           <p className="uppercase text-sm tracking-widest pb-4 text-gray-600">
             Let me Improve your Company
           </p>
-          <h1 className="dark:text-white text-gray-700">
-            I'm
-            <span className="text-red-800 dark:text-red-600 px-4">
-              Nicholas Abell
-            </span>
-          </h1>
-          <p className="py-4 dark:text-gray-300 text-gray-600 max-w-[70%] m-auto">
+          <h1 className="text-red-800 dark:text-red-700">Nicholas Abell</h1>
+          <p className="pt-4 dark:text-gray-300 text-gray-600 max-w-[70%] m-auto">
             A front end developer looking to make a difference on your next
             project.
           </p>
-          <IconPalette />
+          <IconPalette_lg />
         </div>
       </div>
     </div>

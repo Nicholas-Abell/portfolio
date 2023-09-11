@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaHome } from "react-icons/fa";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
-import IconPalette from "../IconPalette";
+import { IconPalette_lg } from "../shared/IconPalette";
 
 type NavbarProps = {
   toggleDarkMode: () => void;
@@ -168,7 +168,7 @@ const Navbar: React.FC<NavbarProps> = ({
           <div className="pt-40">
             <p>Let's Connect</p>
           </div>
-          <IconPalette nav={true} setMobileNav={setMobileNav} />
+          {/* <IconPalette nav={true} setMobileNav={setMobileNav} /> */}
         </div>
       </div>
     </div>

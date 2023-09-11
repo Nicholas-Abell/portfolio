@@ -5,7 +5,7 @@ import {
   FaReact,
   FaBootstrap,
   FaSass,
-  FaSquarespace
+  FaSquarespace,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -18,7 +18,7 @@ import {
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BsGit } from "react-icons/bs";
-import Skill from "../Skill";
+import Skill from "../shared/Skill";
 
 const Skills = () => {
   return (
@@ -104,9 +104,7 @@ const Skills = () => {
             icon={<TbBrandNextjs size={50} className="dark:text-gray-300" />}
           />
         </div>
-        <h2 className="underline underline-offset-2 pt-8 text-gray-400">
-          CMS
-        </h2>
+        <h2 className="underline underline-offset-2 pt-8 text-gray-400">CMS</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mt-12">
           <Skill
             title="SquareSpace"
