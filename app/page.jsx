@@ -1,8 +1,8 @@
-import Main from "./components/Home/Main";
-import About from "./components/Home/About";
-import Skills from "./components/Home/Skills";
-import Projects from "./components/Home/Projects";
-import Contact from "./components/Home/Contact";
+import Main from "../components/home/Main";
+import About from "../components/home/About";
+import Skills from "../components/home/Skills";
+import Projects from "../components/home/Projects";
+import Contact from "../components/home/Contact";
 
 export const metadata = {
   title: 'Nicholas Abell',

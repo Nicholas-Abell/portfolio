@@ -35,7 +35,7 @@ export const IconPalette_lg: React.FC<IconPaletteProps> = ({
         <div className="flex justify-center gap-16 items-center ">
           <div className="flex justify-center items-center p-0 m-0">
             <MdOutlineHexagon
-              className={`z-0 dark:text-slate-800`}
+              className={`z-0 dark:text-slate-800 flicker`}
               size={200}
             />
             <Link
@@ -46,7 +46,11 @@ export const IconPalette_lg: React.FC<IconPaletteProps> = ({
             </Link>
           </div>
           <div className="flex justify-center items-center p-0 m-0">
-            <MdHexagon className={`z-0 dark:text-slate-800`} size={200} />
+            <MdHexagon
+              className='z-0 dark:text-red-700 flicker-slow'
+              style={{ animation: "flicker" }}
+              size={200}
+            />
           </div>
           <div className="flex justify-center items-center p-0 m-0">
             <MdHexagon className={`z-0 dark:text-slate-800`} size={200} />

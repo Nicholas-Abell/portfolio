@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import Skill from "../components/shared/Skill";
+import Skill from "../../components/shared/Skill";
 //react-icons
 import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import { FaReact, FaSass } from "react-icons/fa";
 //images
-import wordleImage from "../../assets/images/wordle_clone.jpeg";
+import wordleImage from "../../public/assets/images/wordle_clone.jpeg";
 import Link from "next/link";
 
 export default function SMSConstruction() {

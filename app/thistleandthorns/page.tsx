@@ -3,8 +3,8 @@ import Image from "next/image";
 import React from "react";
 import { CgWebsite } from "react-icons/cg";
 import { FaSquarespace } from "react-icons/fa";
-import thistleandthornsimage from "../../assets/images/Thistle&Thorns.png";
-import Skill from "../components/shared/Skill";
+import thistleandthornsimage from "../../public/assets/images/Thistle&Thorns.png";
+import Skill from "../../components/shared/Skill";
 import Link from "next/link";
 
 export default function ThislteandThorns() {

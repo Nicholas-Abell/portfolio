@@ -2,12 +2,12 @@ import React from "react";
 import Project from "./Project";
 
 //images
-import movieDatabase from "../../../assets/images/movie_database.png";
-import smsConstruction from "../../../assets/images/sms_construction.png";
-import wordleClone from "../../../assets/images/wordle_clone.jpeg";
-import everdell from "../../../assets/images/everdell_1.jpg";
-import reddit from "../../../assets/images/reddit_emblem.png";
-import thistlethorns from "../../../assets/images/Thistle&Thorns.png";
+import movieDatabase from "../../public/assets/images/movie_database.png";
+import smsConstruction from "../../public/assets/images/sms_construction.png";
+import wordleClone from "../../public/assets/images/wordle_clone.jpeg";
+import everdell from "../../public/assets/images/everdell_1.jpg";
+import reddit from "../../public/assets/images/reddit_emblem.png";
+import thistlethorns from "../../public/assets/images/Thistle&Thorns.png";
 
 const Projects = () => {
   return (

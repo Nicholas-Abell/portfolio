@@ -5,8 +5,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiFirebase, SiTypescript } from "react-icons/si";
-import reddit from "../../assets/images/reddit.jpg";
-import Skill from "../components/shared/Skill";
+import reddit from "../../public/assets/images/reddit.jpg";
+import Skill from "../../components/shared/Skill";
 import Link from "next/link";
 
 export default function MovieDatabase() {

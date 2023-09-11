@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, ReactNode } from "react";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import "./globals.css";
 
 type layoutProps = {

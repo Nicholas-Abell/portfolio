@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import Skill from "../components/shared/Skill";
+import Skill from "../../components/shared/Skill";
+import Link from "next/link";
 //react-icons
 import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 //images
-import SMSImage from "../../assets/images/sms_construction.png";
-import Link from "next/link";
+import SMSImage from "../../public/assets/images/sms_construction.png";
 
 export default function SMSConstruction() {
   return (
