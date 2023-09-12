@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { IconPalette_lg } from "../shared/IconPalette";
+import IconPalette from "../shared/IconPalette";
 import { SiReact, SiTailwindcss, SiFirebase } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -31,7 +31,7 @@ const Main = () => {
             A front end developer looking to make a difference on your next
             project.
           </p>
-          <IconPalette_lg />
+          <IconPalette />
         </div>
       </div>
     </div>

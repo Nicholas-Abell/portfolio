@@ -3,7 +3,7 @@ import React from "react";
 import { HiChevronDoubleUp } from "react-icons/hi";
 import profileImg from "../../public/assets/images/profile.png";
 import Image from "next/image";
-import { IconPalette_lg } from "../shared/IconPalette";
+import IconPalette from "../shared/IconPalette";
 
 const Contact = () => {
   const scrollToTop = () => {
@@ -38,7 +38,7 @@ const Contact = () => {
                 <p className="uppercase pt-12 text-center dark:text-gray-300">
                   Connect With Me
                 </p>
-                {/* <IconPalette /> */}
+                <IconPalette />
               </div>
             </div>
           </div>
