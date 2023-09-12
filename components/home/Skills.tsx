@@ -28,6 +28,17 @@ const Skills = () => {
 
   return (
     <div className="w-full py-12 px-2">
+      <div className="hidden lg:grid w-full grid-cols-3 text-center bg-gray-300 gap-2 pb-2">
+        <div className="bg-gray-200">
+          <p>Font-end</p>
+        </div>
+        <div className="bg-gray-200">
+          <p>Font-end</p>
+        </div>
+        <div className="bg-gray-200">
+          <p>Font-end</p>
+        </div>
+      </div>
       <div className="bg-gray-400 flex gap-2">
         <div
           className={`${
