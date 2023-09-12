@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import useScreenSize from "../../hooks/useScreenSize";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -23,131 +24,135 @@ import Skill from "../shared/Skill";
 
 const Skills = () => {
   const [skillsSelected, setSkillsSelected] = useState("front-end");
+  const screeSize = useScreenSize();
 
   return (
     <div className="w-full py-12 px-2">
-      <div className="bg-gray-200 flex">
-        {skillsSelected === "front-end" && (
-          <div className="grid grid-cols-3 w-full gap-12 bg-gray-200 p-4">
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-          </div>
-        )}
-
-        {skillsSelected === "back-end" && (
-          <div className="grid grid-cols-3 w-full gap-12 bg-gray-200 p-4">
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-          </div>
-        )}
-
-        {skillsSelected === "other" && (
-          <div className="grid grid-cols-3 w-full gap-12 bg-gray-200 p-4">
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-            <div></div>
-            <Skill
-              title="Git"
-              icon={<BsGit size={50} className="text-orange-600" />}
-            />
-          </div>
-        )}
-
-        <div className="w-[20%] grid gap-2">
+      <div className="bg-gray-400 flex gap-2">
+        <div
+          className={`${
+            skillsSelected === "front-end" ? "grid" : "hidden"
+          } grid-cols-3 w-full gap-12 bg-gray-200 p-4 lg:grid`}
+        >
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+        </div>
+        <div
+          className={`${
+            skillsSelected === "back-end" ? "grid" : "hidden"
+          } grid-cols-3 w-full gap-12 bg-gray-200 p-4 lg:grid`}
+        >
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+        </div>
+        <div
+          className={`${
+            skillsSelected === "other" ? "grid" : "hidden"
+          } grid-cols-3 w-full gap-12 bg-gray-200 p-4 lg:grid`}
+        >
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+          <div></div>
+          <Skill
+            title="Git"
+            icon={<BsGit size={50} className="text-orange-600" />}
+          />
+        </div>
+        <div className="w-[20%] grid gap-2 lg:hidden">
           <div className="bg-gray-400 p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md">
             Software <br /> Dev
           </div>
