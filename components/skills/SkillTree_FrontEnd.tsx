@@ -2,6 +2,13 @@ import React from "react";
 import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import {
+  HiArrowDownLeft,
+  HiArrowDownRight,
+  HiArrowDown,
+  HiArrowLeft,
+  HiArrowRight,
+} from "react-icons/hi2";
 import Skill_Icon from "./Skill_Icon";
 
 type SkillTree_FrontEndProps = {
@@ -15,8 +22,26 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
     <div
       className={`${
         skillsSelected === "front-end" ? "grid" : "hidden"
-      } grid-cols-3 w-full gap-12 bg-gray-200 p-4 lg:grid`}
+      } grid-cols-3 w-full gap-12  p-4 lg:grid relative`}
     >
+      {/* <div
+        className={`${
+          skillsSelected === "front-end" ? "grid" : "hidden"
+        } grid-cols-3 w-full gap-12  p-4 lg:grid absolute top-0 left-24 h-full`}
+      >
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+        <div className="w-full border-l border-green-400"></div>
+      </div> */}
       <Skill_Icon
         title="CSS"
         icon={<FaCss3Alt size={50} className="text-blue-600" />}
@@ -48,7 +73,9 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
       <div></div>
       <Skill_Icon
         title="NextJs"
-        icon={<TbBrandNextjs size={50} className="text-black" />}
+        icon={
+          <TbBrandNextjs size={50} className="text-black dark:text-white" />
+        }
       />
     </div>
   );

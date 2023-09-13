@@ -46,7 +46,7 @@ const Skills = () => {
         <SkillTree_Other skillsSelected={skillsSelected} />
         <div className=" grid gap-2 lg:hidden">
           <div className="bg-gray-400 p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md">
-            Software <br /> Dev
+            Software <br />
           </div>
           <button
             onClick={() => setSkillsSelected("front-end")}
