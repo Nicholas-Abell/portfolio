@@ -10,6 +10,7 @@ import {
   HiArrowRight,
 } from "react-icons/hi2";
 import Skill_Icon from "./Skill_Icon";
+import Line from "./Line";
 
 type SkillTree_FrontEndProps = {
   skillsSelected: string;
@@ -39,9 +40,7 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
         icon={<SiTypescript size={50} className="text-blue-600" />}
         ArrowBottom
       />
-      <div className="relative w-full h-full z-[-20]">
-        <div className="absolute top-30 left-[50%] z-[-20] border-green-400 border-l-2 w-full h-[140%]"></div>
-      </div>
+      <Line color="green" />
       <Skill_Icon
         title="Tailwind"
         icon={<SiTailwindcss size={50} className="text-blue-600" />}
@@ -56,9 +55,7 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
         icon={<FaSass size={50} className="text-pink-600" />}
       />
       <div></div>
-      <div className="relative w-full h-full z-[-20]">
-        <div className="absolute top-30 left-[50%] z-[-20] border-green-400 border-l-2 w-full h-[140%]"></div>
-      </div>
+      <Line color="green" />
       <div></div>
       <div></div>
       <Skill_Icon

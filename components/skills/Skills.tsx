@@ -46,13 +46,13 @@ const Skills = () => {
         <SkillTree_Other skillsSelected={skillsSelected} />
         <div className=" grid gap-2 lg:hidden">
           <div className="bg-gray-400 p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md">
-            Software <br />
+            Software
           </div>
           <button
             onClick={() => setSkillsSelected("front-end")}
             className={`${
               skillsSelected === "front-end" ? "bg-gray-200" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md`}
+            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Frontend
           </button>
@@ -60,7 +60,7 @@ const Skills = () => {
             onClick={() => setSkillsSelected("back-end")}
             className={`${
               skillsSelected === "back-end" ? "bg-gray-200" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md`}
+            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Backend
           </button>
@@ -68,7 +68,7 @@ const Skills = () => {
             onClick={() => setSkillsSelected("other")}
             className={`${
               skillsSelected === "other" ? "bg-gray-200" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md`}
+            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Other
           </button>
