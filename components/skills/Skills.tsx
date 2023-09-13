@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import useScreenSize from "../../hooks/useScreenSize";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -27,7 +26,6 @@ import SkillTree_Other from "./SkillTree_Other";
 
 const Skills = () => {
   const [skillsSelected, setSkillsSelected] = useState("front-end");
-  const screeSize = useScreenSize();
 
   return (
     <div className="w-full py-12 px-2">
@@ -42,7 +40,7 @@ const Skills = () => {
           <p>Font-end</p>
         </div>
       </div>
-      <div className="bg-gray-400 flex">
+      <div className="flex">
         <SkillTree_FrontEnd skillsSelected={skillsSelected} />
         <SkillTree_BackEnd skillsSelected={skillsSelected} />
         <SkillTree_Other skillsSelected={skillsSelected} />
