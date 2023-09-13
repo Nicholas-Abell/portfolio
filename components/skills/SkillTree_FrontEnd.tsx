@@ -24,37 +24,24 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
         skillsSelected === "front-end" ? "grid" : "hidden"
       } grid-cols-3 w-full gap-12  p-4 lg:grid relative`}
     >
-      {/* <div
-        className={`${
-          skillsSelected === "front-end" ? "grid" : "hidden"
-        } grid-cols-3 w-full gap-12  p-4 lg:grid absolute top-0 left-24 h-full`}
-      >
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-        <div className="w-full border-l border-green-400"></div>
-      </div> */}
       <Skill_Icon
         title="CSS"
         icon={<FaCss3Alt size={50} className="text-blue-600" />}
+        ArrowBottom
       />
       <Skill_Icon
         title="HTML"
         icon={<FaHtml5 size={50} className="text-orange-600" />}
+        ArrowBottom
       />
       <Skill_Icon
         title="Ts"
         icon={<SiTypescript size={50} className="text-blue-600" />}
+        ArrowBottom
       />
-      <div></div>
+      <div className="relative w-full h-full z-[-20]">
+        <div className="absolute top-30 left-[50%] z-[-20] border-green-400 border-l-2 w-full h-[140%]"></div>
+      </div>
       <Skill_Icon
         title="Tailwind"
         icon={<SiTailwindcss size={50} className="text-blue-600" />}
@@ -62,13 +49,16 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
       <Skill_Icon
         title="React"
         icon={<FaReact size={50} className="text-blue-600" />}
+        ArrowBottom
       />
       <Skill_Icon
         title="SCSS"
         icon={<FaSass size={50} className="text-pink-600" />}
       />
       <div></div>
-      <div></div>
+      <div className="relative w-full h-full z-[-20]">
+        <div className="absolute top-30 left-[50%] z-[-20] border-green-400 border-l-2 w-full h-[140%]"></div>
+      </div>
       <div></div>
       <div></div>
       <Skill_Icon
