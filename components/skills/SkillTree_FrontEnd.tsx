@@ -16,7 +16,7 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
     <div
       className={`${
         skillsSelected === "front-end" ? "grid" : "hidden"
-      } grid-cols-3 w-full gap-12  p-4 lg:grid relative`}
+      } grid-cols-3 w-full gap-12 p-4 lg:grid relative`}
     >
       <Skill_Icon
         title="CSS"
@@ -32,7 +32,7 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
         arrowColor="border-orange-400"
       />
       <Skill_Icon
-        title="Ts"
+        title="JS"
         icon={<SiJavascript size={50} className="text-yellow-600" />}
         arrowBottom
         arrowColor="border-yellow-400"
@@ -42,15 +42,15 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
         icon={<FaSass size={50} className="text-pink-600" />}
         arrowColor="border-blue-400"
       />
-      <Line color="orange" />
+      <Line color="border-orange-400" />
       <Skill_Icon
-        title="React"
+        title="TS"
         icon={<SiTypescript size={50} className="text-blue-600" />}
         arrowBottom
         arrowColor="border-yellow-400"
       />
       <div></div>
-      <Line color="orange" right />
+      <Line color="border-orange-400" right />
       <Skill_Icon
         title="React"
         icon={<FaReact size={50} className="text-blue-600" />}

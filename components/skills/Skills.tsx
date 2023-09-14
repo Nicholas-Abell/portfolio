@@ -29,46 +29,47 @@ const Skills = () => {
 
   return (
     <div className="w-full py-12 px-2">
-      <div className="hidden lg:grid w-full grid-cols-3 text-center bg-gray-300 gap-2 pb-2">
+      <h2 className="text-4xl">Skills</h2>
+      <div className="hidden lg:grid w-full grid-cols-3 text-center bg-gray-400 gap-2 pb-2">
         <div className="bg-gray-200">
           <p>Font-end</p>
         </div>
         <div className="bg-gray-200">
-          <p>Font-end</p>
+          <p>Back-end</p>
         </div>
         <div className="bg-gray-200">
-          <p>Font-end</p>
+          <p>Other</p>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex gap-2">
         <SkillTree_FrontEnd skillsSelected={skillsSelected} />
         <SkillTree_BackEnd skillsSelected={skillsSelected} />
         <SkillTree_Other skillsSelected={skillsSelected} />
         <div className=" grid gap-2 lg:hidden">
-          <div className="bg-gray-400 p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md">
+          <div className="bg-gray-400 p-12 w-full text-center justify-center items-center border-4 border-slate-500 border-l-0 rounded-md">
             Software
           </div>
           <button
             onClick={() => setSkillsSelected("front-end")}
             className={`${
-              skillsSelected === "front-end" ? "bg-gray-200" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+              skillsSelected === "front-end" ? "bg-none" : "bg-gray-400"
+            } p-12 w-full text-center justify-center items-center border-4 border-slate-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Frontend
           </button>
           <button
             onClick={() => setSkillsSelected("back-end")}
             className={`${
-              skillsSelected === "back-end" ? "bg-gray-200" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+              skillsSelected === "back-end" ? "bg-none" : "bg-gray-400"
+            } p-12 w-full text-center justify-center items-center border-4 border-slate-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Backend
           </button>
           <button
             onClick={() => setSkillsSelected("other")}
             className={`${
-              skillsSelected === "other" ? "bg-gray-200" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-blue-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+              skillsSelected === "other" ? "bg-none" : "bg-gray-400"
+            } p-12 w-full text-center justify-center items-center border-4 border-slate-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Other
           </button>

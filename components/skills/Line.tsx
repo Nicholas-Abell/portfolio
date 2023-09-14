@@ -13,16 +13,16 @@ const Line: React.FC<LineProps> = ({ horizontal, color, right, left }) => {
       <div
         className={`${
           horizontal ? "border-b-2 bottom-[50%]" : "border-l-2 left-[50%]"
-        } absolute top-30  z-[-20] border-${color}-400 w-full h-[140%]`}
+        } absolute top-30  z-[-20] ${color} w-full h-[140%]`}
       ></div>
       {right && (
         <div
-          className={`border-b-2 bottom-[50%] absolute top-30 left-[50%] z-[-20] border-${color}-400 w-full h-[140%]`}
+          className={`border-b-2 bottom-[50%] absolute top-30 left-[50%] z-[-20] ${color} w-full h-[140%]`}
         ></div>
       )}
       {left && (
         <div
-          className={`border-b-2 bottom-[50%] absolute top-30 right-[50%] z-[-20] border-${color}-400 w-full h-[140%]`}
+          className={`border-b-2 bottom-[50%] absolute top-30 right-[50%] z-[-20] ${color} w-full h-[140%]`}
         ></div>
       )}
     </div>

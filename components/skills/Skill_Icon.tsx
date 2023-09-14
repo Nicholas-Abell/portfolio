@@ -34,7 +34,7 @@ const Skill_Icon: React.FC<Skill_IconProps> = ({
       )}
       {arrowLeft && (
         <div
-          className={`absolute top-[50%] right-32 ${arrowColor} border-t-2 w-full h-[60%]`}
+          className={`absolute top-[50%] right-[50%] ${arrowColor} border-t-2 w-full h-[60%]`}
         ></div>
       )}
       {arrowLeft_lg && (
