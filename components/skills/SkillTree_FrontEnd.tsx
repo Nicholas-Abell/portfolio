@@ -2,13 +2,6 @@ import React from "react";
 import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiJavascript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import {
-  HiArrowDownLeft,
-  HiArrowDownRight,
-  HiArrowDown,
-  HiArrowLeft,
-  HiArrowRight,
-} from "react-icons/hi2";
 import Skill_Icon from "./Skill_Icon";
 import Line from "./Line";
 
