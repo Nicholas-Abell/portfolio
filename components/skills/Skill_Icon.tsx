@@ -29,17 +29,17 @@ const Skill_Icon: React.FC<Skill_IconProps> = ({
       </div>
       {arrowBottom && (
         <div
-          className={`absolute top-30 left-[50%] ${arrowColor} border-l-2 w-full h-[60%]`}
+          className={`absolute top-30 left-[50%] border-dotted ${arrowColor} border-l-2 w-full h-[60%]`}
         ></div>
       )}
       {arrowLeft && (
         <div
-          className={`absolute top-[50%] right-[50%] ${arrowColor} border-t-2 w-full h-[60%]`}
+          className={`absolute top-[50%] right-[50%] border-dotted ${arrowColor} border-t-2 w-full h-[60%]`}
         ></div>
       )}
       {arrowLeft_lg && (
         <div
-          className={`absolute top-[50%] right-[75%] ${arrowColor} border-t-2 w-full h-[60%]`}
+          className={`absolute top-[50%] right-[75%] border-dotted ${arrowColor} border-t-2 w-full h-[60%]`}
         ></div>
       )}
     </div>

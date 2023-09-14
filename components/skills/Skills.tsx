@@ -41,7 +41,7 @@ const Skills = () => {
           <p>Other</p>
         </div>
       </div>
-      <div className="flex gap-2">
+      <div className="flex overflow-hidden">
         <SkillTree_FrontEnd skillsSelected={skillsSelected} />
         <SkillTree_BackEnd skillsSelected={skillsSelected} />
         <SkillTree_Other skillsSelected={skillsSelected} />
