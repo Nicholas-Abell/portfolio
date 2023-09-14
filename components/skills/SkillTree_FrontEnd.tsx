@@ -56,8 +56,8 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
         arrowBottom
         arrowColor="border-yellow-400"
       />
-      <div className="test"></div>
-      <Line color="orange"/>
+      <div></div>
+      <Line color="orange" right />
       <Skill_Icon
         title="React"
         icon={<FaReact size={50} className="text-blue-600" />}
@@ -68,7 +68,7 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
         title="Tailwind"
         colSpan={2}
         icon={<SiTailwindcss size={50} className="text-blue-600" />}
-        arrowLeft
+        arrowLeft_lg
         arrowColor="border-blue-400"
       />
       <Skill_Icon

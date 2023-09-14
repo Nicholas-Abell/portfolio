@@ -5,6 +5,7 @@ type Skill_IconProps = {
   title: string;
   arrowBottom?: boolean;
   arrowLeft?: boolean;
+  arrowLeft_lg?: boolean;
   arrowColor?: string;
   colSpan?: number;
 };
@@ -16,6 +17,7 @@ const Skill_Icon: React.FC<Skill_IconProps> = ({
   arrowBottom,
   colSpan,
   arrowColor,
+  arrowLeft_lg,
 }) => {
   return (
     <div className={`p-4 neon rounded-xl relative z-201 col-span-${colSpan}`}>
@@ -27,12 +29,17 @@ const Skill_Icon: React.FC<Skill_IconProps> = ({
       </div>
       {arrowBottom && (
         <div
-          className={`absolute top-30 left-[50%] z-[-1] ${arrowColor} border-l-2 w-full h-[60%]`}
+          className={`absolute top-30 left-[50%] ${arrowColor} border-l-2 w-full h-[60%]`}
         ></div>
       )}
       {arrowLeft && (
         <div
-          className={`absolute top-[50%] right-32 z-[-1] ${arrowColor} border-t-2 w-full h-[60%]`}
+          className={`absolute top-[50%] right-32 ${arrowColor} border-t-2 w-full h-[60%]`}
+        ></div>
+      )}
+      {arrowLeft_lg && (
+        <div
+          className={`absolute top-[50%] right-[75%] ${arrowColor} border-t-2 w-full h-[60%]`}
         ></div>
       )}
     </div>
