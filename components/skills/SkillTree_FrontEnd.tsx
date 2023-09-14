@@ -64,12 +64,7 @@ const SkillTree_FrontEnd: React.FC<SkillTree_FrontEndProps> = ({
         arrowLeft_lg
         arrowColor="border-blue-400"
       />
-      <Skill_Icon
-        title="NextJs"
-        icon={
-          <TbBrandNextjs size={50} className="text-black dark:text-white" />
-        }
-      />
+      <Skill_Icon title="NextJs" icon={<TbBrandNextjs size={50} />} />
     </div>
   );
 };

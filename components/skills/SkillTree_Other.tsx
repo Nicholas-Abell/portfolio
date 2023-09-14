@@ -26,25 +26,15 @@ const SkillTree_Other: React.FC<SkillTree_OtherProps> = ({
       <div></div>
       <Skill_Icon
         title="C#"
-        icon={<SiCsharp size={50} className="text-black" />}
+        icon={<SiCsharp size={50} />}
         arrowBottom
         arrowColor="border-purple-600"
       />
-      <Skill_Icon
-        title="GitHub"
-        icon={<AiOutlineGithub size={50} className="text-black" />}
-        arrowLeft
-      />
+      <Skill_Icon title="GitHub" icon={<AiOutlineGithub size={50} />} />
       <div></div>
-      <Skill_Icon
-        title="Unity"
-        icon={<BsUnity size={50} className="text-black" />}
-      />
+      <Skill_Icon title="Unity" icon={<BsUnity size={50} />} />
       <div></div>
-      <Skill_Icon
-        title="SquareSpace"
-        icon={<SiSquarespace size={50} className="text-black" />}
-      />
+      <Skill_Icon title="SquareSpace" icon={<SiSquarespace size={50} />} />
       <div></div>
       <Skill_Icon
         title="Bootstrap"
