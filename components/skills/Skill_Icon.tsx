@@ -3,24 +3,37 @@ import React from "react";
 type Skill_IconProps = {
   icon: any;
   title: string;
-  ArrowBottom?: boolean;
+  arrowBottom?: boolean;
+  arrowLeft?: boolean;
+  arrowColor?: string;
+  colSpan?: number;
 };
 
 const Skill_Icon: React.FC<Skill_IconProps> = ({
   icon,
   title,
-  ArrowBottom,
+  arrowLeft,
+  arrowBottom,
+  colSpan,
+  arrowColor,
 }) => {
   return (
-    <div className="p-4 neon rounded-xl relative z-20">
+    <div className={`p-4 neon rounded-xl relative z-201 col-span-${colSpan}`}>
       <div className="grid grid-cols-1 gap-4 justify-center items-center z-20">
         <div className="m-auto">{icon}</div>
         <div className="flex flex-col items-center justify-center">
           <h3>{title}</h3>
         </div>
       </div>
-      {ArrowBottom && (
-        <div className="absolute top-30 left-[50%] z-[-1] border-green-400 border-l-2 w-full h-[60%]"></div>
+      {arrowBottom && (
+        <div
+          className={`absolute top-30 left-[50%] z-[-1] ${arrowColor} border-l-2 w-full h-[60%]`}
+        ></div>
+      )}
+      {arrowLeft && (
+        <div
+          className={`absolute top-[50%] right-32 z-[-1] ${arrowColor} border-t-2 w-full h-[60%]`}
+        ></div>
       )}
     </div>
   );
