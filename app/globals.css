@@ -73,3 +73,10 @@ html {
 	}
 }
 
+.test{
+  border: red solid 2px
+}
+
+.test2{
+  border: solid palegreen 2px
+}
