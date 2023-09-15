@@ -41,19 +41,19 @@ const Skills = () => {
           <p>Other</p>
         </div>
       </div>
-      <div className="flex overflow-hidden">
+      <div className="flex flex-col md:flex-row overflow-hidden">
         <SkillTree_FrontEnd skillsSelected={skillsSelected} />
         <SkillTree_BackEnd skillsSelected={skillsSelected} />
         <SkillTree_Other skillsSelected={skillsSelected} />
-        <div className=" grid gap-2 lg:hidden">
-          <div className="bg-gray-400 p-12 w-full text-center justify-center items-center border-4 border-slate-500 border-l-0 rounded-md">
+        <div className=" grid grid-cols-4 md:grid-cols-1 gap-2 lg:hidden">
+          <div className="bg-gray-400 md:p-12 w-full text-center justify-center items-center border-4 border-slate-500 md:border-l-0 rounded-md">
             Software
           </div>
           <button
             onClick={() => setSkillsSelected("front-end")}
             className={`${
               skillsSelected === "front-end" ? "bg-none" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-slate-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+            } md:p-12 w-full text-center justify-center items-center border-4 border-slate-500 md:border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Frontend
           </button>
@@ -61,7 +61,7 @@ const Skills = () => {
             onClick={() => setSkillsSelected("back-end")}
             className={`${
               skillsSelected === "back-end" ? "bg-none" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-slate-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+            } md:p-12 w-full text-center justify-center items-center border-4 border-slate-500 md:border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Backend
           </button>
@@ -69,7 +69,7 @@ const Skills = () => {
             onClick={() => setSkillsSelected("other")}
             className={`${
               skillsSelected === "other" ? "bg-none" : "bg-gray-400"
-            } p-12 w-full text-center justify-center items-center border-4 border-slate-500 border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+            } md:p-12 w-full text-center justify-center items-center border-4 border-slate-500 md:border-l-0 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Other
           </button>
