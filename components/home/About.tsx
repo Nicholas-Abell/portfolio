@@ -1,9 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import profileTwo from "../../public/assets/images/profile.png";
 import Image from "next/image";
 import { Roboto, Indie_Flower } from "@next/font/google";
 import { BsFillHeartFill } from "react-icons/bs";
 import { BiSolidShield } from "react-icons/bi";
+import {
+  IoChevronBackCircleSharp,
+  IoChevronForwardCircleSharp,
+} from "react-icons/io5";
 
 const indie_flower = Indie_Flower({
   subsets: ["latin"],
@@ -11,6 +16,14 @@ const indie_flower = Indie_Flower({
 });
 
 const About = () => {
+  const [sheetNumber, setSheetNumber] = useState(2);
+
+  const handleSheetNumber = (x: number) => {
+    if (x + sheetNumber > 3) setSheetNumber(1);
+    else if (x + sheetNumber < 1) setSheetNumber(3);
+    else setSheetNumber((sheetNumber) => sheetNumber + x);
+  };
+
   return (
     <div id="about" className="w-full px-2 py-10">
       <div className="flex justify-center items-center w-full px-4 lg:px-24">
@@ -66,11 +79,29 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 justify-center gap-2 p-4">
-        <div className="border border-gray-400 grid grid-cols-2 justify-center gap-4 p-4">
-          <BsFillHeartFill size={50} className="m-auto" />
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-2 p-4 relative test min-h-[50vh]">
+        <div className="lg:hidden absolute w-full flex justify-between top-[50%]">
+          <IoChevronBackCircleSharp
+            size={60}
+            onClick={() => handleSheetNumber(-1)}
+            className="cursor-pointer opacity-25 hover:opacity-100 hover:scale-110 transition-opacity ease-in duration-200"
+          />
+          <IoChevronForwardCircleSharp
+            size={60}
+            onClick={() => handleSheetNumber(1)}
+            className="cursor-pointer opacity-25 hover:opacity-100 hover:scale-110 transition-opacity ease-in duration-200"
+          />
+        </div>
+
+        <div
+          className={`${sheetNumber === 1 ? "grid" : "hidden"}
+        } border border-gray-400 grid-cols-2 justify-center gap-4 p-4 lg:grid`}
+        >
+          <BsFillHeartFill size={60} className="m-auto" />
           <BiSolidShield size={60} className="m-auto" />
-          <div className="bg-gray-600 py-12">c</div>
+          <div className="bg-gray-600 py-12 text-red-600 test flex justify-center items-center">
+            {sheetNumber}
+          </div>
           <div className="bg-gray-600 py-12">c</div>
           <div className="bg-gray-600 py-12">c</div>
           <div className="bg-gray-600 py-12">c</div>
@@ -85,34 +116,42 @@ const About = () => {
           </div>
         </div>
 
-        <div className="border border-gray-400 grid grid-cols-1 justify-center p-4">
+        <div
+          className={`${
+            sheetNumber === 2 ? "grid" : "hidden"
+          } lg:grid grid-cols-1 border border-gray-400  justify-center p-4`}
+        >
           <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4"></div>
-            <div className="bg-gray-300 col-span-2 p-4"></div>
+            <div className="bg-red-800 p-4">b</div>
+            <div className="bg-gray-300 col-span-2 p-4">b</div>
           </div>
           <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4"></div>
-            <div className="bg-gray-300 col-span-2 p-4"></div>
+            <div className="bg-red-800 p-4">b</div>
+            <div className="bg-gray-300 col-span-2 p-4">b</div>
           </div>
           <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4"></div>
-            <div className="bg-gray-300 col-span-2 p-4"></div>
+            <div className="bg-red-800 p-4">b</div>
+            <div className="bg-gray-300 col-span-2 p-4">b</div>
           </div>
           <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4"></div>
-            <div className="bg-gray-300 col-span-2 p-4"></div>
+            <div className="bg-red-800 p-4">b</div>
+            <div className="bg-gray-300 col-span-2 p-4">b</div>
           </div>
           <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4"></div>
-            <div className="bg-gray-300 col-span-2 p-4"></div>
+            <div className="bg-red-800 p-4">b</div>
+            <div className="bg-gray-300 col-span-2 p-4">b</div>
           </div>
           <div className="grid grid-cols-3">
-            <div className="bg-red-800 p-4"></div>
-            <div className="bg-gray-300 col-span-2 p-4"></div>
+            <div className="bg-red-800 p-4">b</div>
+            <div className="bg-gray-300 col-span-2 p-4">b</div>
           </div>
         </div>
 
-        <div className="border border-gray-400 grid p-2 rounded-lg">
+        <div
+          className={`${
+            sheetNumber === 3 ? "grid" : "hidden"
+          } lg:grid border border-gray-400 p-2 rounded-lg`}
+        >
           <div className="bg-gray-400 border-4 flex flex-col justify-between">
             <div className="flex justify-center items-center w-full h-full">
               <p className="pl-4">
