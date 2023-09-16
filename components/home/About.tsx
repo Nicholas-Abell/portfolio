@@ -37,23 +37,23 @@ const About = () => {
         <div className="grid grid-cols-1 w-full gap-4">
           <div className="text-center grid grid-cols-3">
             <div>
+              <p className={indie_flower.className}>Nicholas Abell</p>
+            </div>
+            <div>
               <p className={indie_flower.className}>Software Developer</p>
             </div>
             <div>
               <p className={indie_flower.className}>Self Taught</p>
             </div>
-            <div>
-              <p className={indie_flower.className}>Nicholas Abell</p>
-            </div>
             <div className=" col-span-3 border-b-2 border-gray-400"></div>
+            <div>
+              <p>NAME</p>
+            </div>
             <div>
               <p>CLASS</p>
             </div>
             <div>
               <p>BACKGROUND</p>
-            </div>
-            <div>
-              <p>NAME</p>
             </div>
           </div>
           <div className="text-center grid grid-cols-3">
@@ -99,12 +99,21 @@ const About = () => {
         >
           <BsFillHeartFill size={60} className="m-auto" />
           <BiSolidShield size={60} className="m-auto" />
-          <div className="bg-gray-600 py-12 text-red-600 test flex justify-center items-center">
-            {sheetNumber}
+          <div className="bg-white rounded-lg border-2 border-gray-400 py-12 flex flex-col justify-between items-center">
+            <div className="w-[25%] bg-gray-600 p-2"></div>
+            <p className="text-center font-bold uppercase py-4">
+              TEMP HP
+            </p>
           </div>
-          <div className="bg-gray-600 py-12">c</div>
-          <div className="bg-gray-600 py-12">c</div>
-          <div className="bg-gray-600 py-12">c</div>
+          <div className="bg-white rounded-lg border-2 border-gray-400 py-12">
+            c
+          </div>
+          <div className="bg-white rounded-lg border-2 border-gray-400 py-12">
+            c
+          </div>
+          <div className="bg-white rounded-lg border-2 border-gray-400 py-12">
+            c
+          </div>
           <div className="bg-gray-600 col-span-2">c</div>
           <div className="bg-gray-400 border-4 flex flex-col justify-between col-span-2">
             <div className="flex justify-center items-center w-full h-full">
@@ -154,13 +163,13 @@ const About = () => {
         >
           <div className="bg-gray-400 border-4 flex flex-col justify-between">
             <div className="flex justify-center items-center w-full h-full">
-              <p className="pl-4">
+              <p className="px-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
                 culpa tempore an asdfasd fsdf asdf sadf hfghpfpgiojear
                 sdcxzp'cogjvar twseiofjs
               </p>
             </div>
-            <p className="text-center font-bold bottom-0 uppercase py-4 border-t-2">
+            <p className="text-center font-bold uppercase py-4 border-t-2">
               BIO
             </p>
           </div>
