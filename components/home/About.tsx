@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import profileTwo from "../../public/assets/images/profile.png";
 import Image from "next/image";
 import { Roboto, Indie_Flower } from "@next/font/google";
-import { BsFillHeartFill } from "react-icons/bs";
+import { BsFillHeartFill, BsFillDiamondFill } from "react-icons/bs";
 import { BiSolidShield } from "react-icons/bi";
+import { RxDotFilled, RxDot } from "react-icons/rx";
 import {
   IoChevronBackCircleSharp,
   IoChevronForwardCircleSharp,
 } from "react-icons/io5";
+import { AiTwotoneCheckCircle } from "react-icons/ai";
 
 const indie_flower = Indie_Flower({
   subsets: ["latin"],
@@ -79,7 +81,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-2 p-4 relative test min-h-[50vh]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-2 p-4 relative bg-white test">
         <div className="lg:hidden absolute w-full flex justify-between top-[50%]">
           <IoChevronBackCircleSharp
             size={60}
@@ -94,32 +96,187 @@ const About = () => {
         </div>
 
         <div
-          className={`${sheetNumber === 1 ? "grid" : "hidden"}
-        } border border-gray-400 grid-cols-2 justify-center gap-4 p-4 lg:grid`}
+          className={`${
+            sheetNumber === 1 ? "grid" : "hidden"
+          } lg:grid grid-cols-1 border border-gray-400  justify-center p-4 bg-gray-200 rounded-lg`}
         >
-          <BsFillHeartFill size={60} className="m-auto" />
-          <BiSolidShield size={60} className="m-auto" />
-          <div className="bg-white rounded-lg border-2 border-gray-400 py-12 flex flex-col justify-between items-center">
-            <div className="w-[25%] bg-gray-600 p-2"></div>
-            <p className="text-center font-bold uppercase py-4">
-              TEMP HP
+          <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
+            <div className="bg-white flex flex-col justify-between items-center rounded-lg">
+              <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
+              <p className="w-fulltext-center font-bold uppercase">STRENGTH</p>
+            </div>
+            <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
+              <div className="flex gap-2">
+                <BsFillDiamondFill className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>SAVING THROWS</p>
+              </div>
+              <div className="flex gap-2">
+                <AiTwotoneCheckCircle className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>ATHLETICS</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
+            <div className="bg-white flex flex-col justify-between items-center rounded-lg">
+              <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
+              <p className="w-full text-center font-bold uppercase">
+                DEXTERITY
+              </p>
+            </div>
+            <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
+              <div className="flex gap-2">
+                <BsFillDiamondFill className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>SAVING THROWS</p>
+              </div>
+              <div className="flex gap-2">
+                <AiTwotoneCheckCircle className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>ACROBATICS</p>
+              </div>
+              <div className="flex gap-2">
+                <AiTwotoneCheckCircle className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>SLEIGHT OF HAND</p>
+              </div>
+              <div className="flex gap-2">
+                <AiTwotoneCheckCircle className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>STEALTH</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
+            <div className="bg-white flex flex-col justify-between items-center rounded-lg">
+              <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
+              <p className="w-fulltext-center font-bold uppercase">STRENGTH</p>
+            </div>
+            <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
+              <div className="flex gap-2">
+                <BsFillDiamondFill className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>SAVING THROWS</p>
+              </div>
+              <div className="flex gap-2">
+                <AiTwotoneCheckCircle className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>ATHLETICS</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
+            <div className="bg-white flex flex-col justify-between items-center rounded-lg">
+              <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
+              <p className="w-fulltext-center font-bold uppercase">STRENGTH</p>
+            </div>
+            <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
+              <div className="flex gap-2">
+                <BsFillDiamondFill className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>SAVING THROWS</p>
+              </div>
+              <div className="flex gap-2">
+                <AiTwotoneCheckCircle className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>ATHLETICS</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
+            <div className="bg-white flex flex-col justify-between items-center rounded-lg">
+              <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
+              <p className="w-fulltext-center font-bold uppercase">STRENGTH</p>
+            </div>
+            <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
+              <div className="flex gap-2">
+                <BsFillDiamondFill className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>SAVING THROWS</p>
+              </div>
+              <div className="flex gap-2">
+                <AiTwotoneCheckCircle className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>ATHLETICS</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
+            <div className="bg-white flex flex-col justify-between items-center rounded-lg">
+              <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
+              <p className="w-fulltext-center font-bold uppercase">STRENGTH</p>
+            </div>
+            <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
+              <div className="flex gap-2">
+                <BsFillDiamondFill className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>SAVING THROWS</p>
+              </div>
+              <div className="flex gap-2">
+                <AiTwotoneCheckCircle className="text-white" />
+                <span className="border-b border-black w-4"></span>
+                <p>ATHLETICS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className={`${sheetNumber === 2 ? "grid" : "hidden"}
+        border border-gray-400 grid-cols-2 justify-center gap-1 p-4 lg:grid bg-gray-200 rounded-lg`}
+        >
+          <BsFillHeartFill size={60} className="m-auto text-black" />
+          <BiSolidShield size={60} className="m-auto text-black" />
+          <div className="bg-white rounded-lg border-2 border-gray-400 flex flex-col justify-between items-center">
+            <div className="w-full h-full flex justify-center items-center">
+              <p className="py-8">18</p>
+            </div>
+            <p className="font-bold uppercase">TEMP HP</p>
+          </div>
+          <div className="bg-white rounded-lg border-2 border-gray-400 flex flex-col justify-between items-center">
+            <div className="w-full h-full flex justify-center items-center">
+              <p className="py-8">2d6</p>
+            </div>
+            <p className="font-bold uppercase">HIT DICE</p>
+          </div>
+          <div className="bg-white rounded-lg border-2 border-gray-400 flex flex-col justify-between items-center">
+            <div className="w-full h-full flex justify-center items-center">
+              <p className="py-8">12ft</p>
+            </div>
+            <p className="font-bold uppercase">SPEED</p>
+          </div>
+          <div className="bg-white rounded-lg border-2 border-gray-400 flex flex-col justify-between items-center">
+            <div className="w-full h-full flex justify-center items-center">
+              <p className="py-8">+2</p>
+            </div>
+            <p className="font-bold uppercase">INITIATIVE</p>
+          </div>
+          <div className="bg-white border-gray-400 border-2 rounded-full col-span-2 flex justify-between items-center w-full">
+            <div className="rounded-full border-2 border-gray-400 px-8 py-1">
+              <p>27</p>
+            </div>
+            <p className="text-center font-bold w-full uppercase">
+              PASSIVE PERCEPTION
             </p>
           </div>
-          <div className="bg-white rounded-lg border-2 border-gray-400 py-12">
-            c
-          </div>
-          <div className="bg-white rounded-lg border-2 border-gray-400 py-12">
-            c
-          </div>
-          <div className="bg-white rounded-lg border-2 border-gray-400 py-12">
-            c
-          </div>
-          <div className="bg-gray-600 col-span-2">c</div>
-          <div className="bg-gray-400 border-4 flex flex-col justify-between col-span-2">
-            <div className="flex justify-center items-center w-full h-full">
-              <p className="p-8">Nagotiable</p>
+          <div className="bg-white border-gray-400 border-2 rounded-full col-span-2 flex justify-between items-center w-full">
+            <div className="rounded-full border-2 border-gray-400 px-8 py-1">
+              <p>+2</p>
             </div>
-            <p className="text-center font-bold bottom-0 uppercase py-4 border-t-2">
+            <p className="text-center font-bold w-full uppercase">
+              PROFICIENCY
+            </p>
+          </div>
+          <div className="bg-white grid grid-cols-1 border-2 border-gray-400 col-span-2 rounded-lg">
+            <div className="w-full border-black border-b py-3"></div>
+            <div className="w-full border-black border-b py-3"></div>
+            <p className="w-full border-black border-b text-center">
+              Negotiable
+            </p>
+            <div className="w-full border-black border-b py-3"></div>
+            <div className="w-full border-black border-b py-3"></div>
+            <p className="text-center font-bold uppercase border-t-2">
               CURRENCY
             </p>
           </div>
@@ -127,39 +284,8 @@ const About = () => {
 
         <div
           className={`${
-            sheetNumber === 2 ? "grid" : "hidden"
-          } lg:grid grid-cols-1 border border-gray-400  justify-center p-4`}
-        >
-          <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4">b</div>
-            <div className="bg-gray-300 col-span-2 p-4">b</div>
-          </div>
-          <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4">b</div>
-            <div className="bg-gray-300 col-span-2 p-4">b</div>
-          </div>
-          <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4">b</div>
-            <div className="bg-gray-300 col-span-2 p-4">b</div>
-          </div>
-          <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4">b</div>
-            <div className="bg-gray-300 col-span-2 p-4">b</div>
-          </div>
-          <div className="grid grid-cols-3 border-b-2">
-            <div className="bg-red-800 p-4">b</div>
-            <div className="bg-gray-300 col-span-2 p-4">b</div>
-          </div>
-          <div className="grid grid-cols-3">
-            <div className="bg-red-800 p-4">b</div>
-            <div className="bg-gray-300 col-span-2 p-4">b</div>
-          </div>
-        </div>
-
-        <div
-          className={`${
             sheetNumber === 3 ? "grid" : "hidden"
-          } lg:grid border border-gray-400 p-2 rounded-lg`}
+          } lg:grid border border-gray-400 p-2 bg-gray-200 rounded-lg`}
         >
           <div className="bg-gray-400 border-4 flex flex-col justify-between">
             <div className="flex justify-center items-center w-full h-full">
