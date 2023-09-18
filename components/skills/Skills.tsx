@@ -41,7 +41,7 @@ const Skills = () => {
           <p>Other</p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row overflow-hidden">
+      <div className="flex flex-col-reverse md:flex-row overflow-hidden">
         <SkillTree_FrontEnd skillsSelected={skillsSelected} />
         <SkillTree_BackEnd skillsSelected={skillsSelected} />
         <SkillTree_Other skillsSelected={skillsSelected} />
