@@ -9,7 +9,7 @@ const Biography: React.FC<BiographyProps> = ({ sheetNumber }) => {
     <div
       className={`${
         sheetNumber === 3 ? "grid" : "hidden"
-      } lg:grid border border-gray-400 p-2 bg-gray-200 rounded-lg gap-4`}
+      } min-h-[50vh] md:min-h-0 lg:grid border border-gray-400 p-2 bg-gray-200 rounded-lg gap-4 md:hover:scale-105 md:hover:shadow-lg shadow-black ease-in duration-300`}
     >
       <div className="bg-white grid grid-cols-1 border-2 border-gray-400 col-span-2 rounded-lg">
         <p className="w-full border-black border-b text-center">
