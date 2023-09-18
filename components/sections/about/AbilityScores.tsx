@@ -9,7 +9,7 @@ type AbilityScoresProps = {
 
 const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
   return (
-    <div
+    <aside
       className={`${
         sheetNumber === 1 ? "grid" : "hidden"
       } min-h-[50vh] md:min-h-0 lg:grid grid-cols-1 grid-rows-4 border border-gray-400 justify-center p-4 bg-gray-200 rounded-lg md:hover:scale-105 md:hover:shadow-lg shadow-black ease-in duration-300`}
@@ -122,7 +122,7 @@ const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 export default AbilityScores;

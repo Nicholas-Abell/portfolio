@@ -6,7 +6,7 @@ type BiographyProps = {
 
 const Biography: React.FC<BiographyProps> = ({ sheetNumber }) => {
   return (
-    <div
+    <aside
       className={`${
         sheetNumber === 3 ? "grid" : "hidden"
       } min-h-[50vh] md:min-h-0 lg:grid border border-gray-400 p-2 bg-gray-200 rounded-lg gap-4 md:hover:scale-105 md:hover:shadow-lg shadow-black ease-in duration-300`}
@@ -68,7 +68,7 @@ const Biography: React.FC<BiographyProps> = ({ sheetNumber }) => {
         <div className="w-full border-black border-b"></div>
         <p className="text-center font-bold uppercase">EQUIPMENT</p>
       </div>
-    </div>
+    </aside>
   );
 };
 export default Biography;

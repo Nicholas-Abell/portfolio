@@ -6,7 +6,7 @@ type TempStatsProps = { sheetNumber: number };
 
 const TempStats: React.FC<TempStatsProps> = ({ sheetNumber }) => {
   return (
-    <div
+    <aside
       className={`${
         sheetNumber === 2 ? "grid" : "hidden"
       } min-h-[50vh] md:min-h-0
@@ -60,7 +60,7 @@ const TempStats: React.FC<TempStatsProps> = ({ sheetNumber }) => {
         <div className="w-full border-black border-b py-3"></div>
         <p className="text-center font-bold uppercase border-t-2">CURRENCY</p>
       </div>
-    </div>
+    </aside>
   );
 };
 export default TempStats;

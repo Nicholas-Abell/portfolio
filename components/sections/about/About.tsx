@@ -26,7 +26,7 @@ const About = () => {
   };
 
   return (
-    <div id="about" className="w-full px-2 py-10">
+    <section id="about" className="w-full px-2 py-10">
       <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-center items-center w-full px-4 lg:px-24 pb-4">
         <Image
           src={profileTwo}
@@ -98,7 +98,7 @@ const About = () => {
         <TempStats sheetNumber={sheetNumber} />
         <Biography sheetNumber={sheetNumber} />
       </div>
-    </div>
+    </section>
   );
 };
 
