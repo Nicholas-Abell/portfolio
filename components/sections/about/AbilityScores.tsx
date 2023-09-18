@@ -11,14 +11,14 @@ const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
   return (
     <aside
       className={`${
-        sheetNumber === 1 ? "grid" : "hidden"
-      } min-h-[50vh] md:min-h-0 lg:grid grid-cols-1 grid-rows-4 border border-gray-400 justify-center p-4 bg-gray-200 rounded-lg md:hover:scale-105 md:hover:shadow-lg shadow-black ease-in duration-300`}
+        sheetNumber === 3 ? "grid" : "hidden"
+      } min-h-[50vh] md:min-h-0 lg:grid grid-cols-1 grid-rows-4 border border-gray-400 justify-center p-4 bg-gray-200 rounded-lg lg:hover:scale-105 lg:hover:shadow-lg shadow-black ease-in duration-300`}
     >
       <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
         <div className="bg-white flex flex-col justify-between items-center rounded-lg">
           <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
           <p className="w-fulltext-center font-bold uppercase text-sm">
-            STRENGTH
+            FRONT-END
           </p>
         </div>
         <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
@@ -28,9 +28,19 @@ const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
             <p>SAVING THROWS</p>
           </div>
           <div className="flex gap-2">
+            <AiTwotoneCheckCircle className="text-slate-600" />
+            <span className="border-b border-black w-4"></span>
+            <p>FRAMEWORKS</p>
+          </div>
+          <div className="flex gap-2">
+            <AiTwotoneCheckCircle className="text-slate-600" />
+            <span className="border-b border-black w-4"></span>
+            <p>STYLING</p>
+          </div>
+          <div className="flex gap-2">
             <AiTwotoneCheckCircle className="text-white" />
             <span className="border-b border-black w-4"></span>
-            <p>ATHLETICS</p>
+            <p>SEO</p>
           </div>
         </div>
       </div>
@@ -39,7 +49,7 @@ const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
         <div className="bg-white flex flex-col justify-between items-center rounded-lg">
           <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
           <p className="w-full text-center font-bold uppercase text-sm">
-            DEXTERITY
+            BACK-END
           </p>
         </div>
         <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
@@ -49,19 +59,19 @@ const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
             <p>SAVING THROWS</p>
           </div>
           <div className="flex gap-2">
-            <AiTwotoneCheckCircle className="text-white" />
+            <AiTwotoneCheckCircle className="text-slate-600" />
             <span className="border-b border-black w-4"></span>
-            <p>ACROBATICS</p>
+            <p>DATABASE</p>
+          </div>
+          <div className="flex gap-2">
+            <AiTwotoneCheckCircle className="text-slate-600" />
+            <span className="border-b border-black w-4"></span>
+            <p>API</p>
           </div>
           <div className="flex gap-2">
             <AiTwotoneCheckCircle className="text-white" />
             <span className="border-b border-black w-4"></span>
-            <p>SLEIGHT OF HAND</p>
-          </div>
-          <div className="flex gap-2">
-            <AiTwotoneCheckCircle className="text-white" />
-            <span className="border-b border-black w-4"></span>
-            <p>STEALTH</p>
+            <p>SERVERS</p>
           </div>
         </div>
       </div>
@@ -69,13 +79,13 @@ const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
       <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
         <div className="bg-white flex flex-col justify-between items-center rounded-lg">
           <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
-          <p className="w-fulltext-center font-bold uppercase text-sm">
-            CONSTITUTION
+          <p className="w-fulltext-center font-bold uppercase text-xs">
+            VERSION CONTROL
           </p>
         </div>
         <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
           <div className="flex gap-2">
-            <BsFillDiamondFill className="text-white" />
+            <BsFillDiamondFill className="text-slate-600" />
             <span className="border-b border-black w-4"></span>
             <p>SAVING THROWS</p>
           </div>
@@ -85,9 +95,7 @@ const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
       <div className="grid grid-cols-3 border-black border-2 rounded-l-lg">
         <div className="bg-white flex flex-col justify-between items-center rounded-lg">
           <div className="w-[25%] p-4 bg-gray-400 border-2 border-black"></div>
-          <p className="w-fulltext-center font-bold uppercase text-sm">
-            INTELLIGENCE
-          </p>
+          <p className="w-fulltext-center font-bold uppercase text-sm">CMS</p>
         </div>
         <div className="bg-gray-300 col-span-2 p-4 gap-1 flex flex-col text-xs">
           <div className="flex gap-2">
@@ -98,27 +106,17 @@ const AbilityScores: React.FC<AbilityScoresProps> = ({ sheetNumber }) => {
           <div className="flex gap-2">
             <AiTwotoneCheckCircle className="text-white" />
             <span className="border-b border-black w-4"></span>
-            <p>ARCANA</p>
+            <p>WORDPRESS</p>
+          </div>
+          <div className="flex gap-2">
+            <AiTwotoneCheckCircle className="text-slate-600" />
+            <span className="border-b border-black w-4"></span>
+            <p>SQUARESPACE</p>
           </div>
           <div className="flex gap-2">
             <AiTwotoneCheckCircle className="text-white" />
             <span className="border-b border-black w-4"></span>
-            <p>HISTORY</p>
-          </div>
-          <div className="flex gap-2">
-            <AiTwotoneCheckCircle className="text-white" />
-            <span className="border-b border-black w-4"></span>
-            <p>INVESTIGATION</p>
-          </div>
-          <div className="flex gap-2">
-            <AiTwotoneCheckCircle className="text-white" />
-            <span className="border-b border-black w-4"></span>
-            <p>NATURE</p>
-          </div>
-          <div className="flex gap-2">
-            <AiTwotoneCheckCircle className="text-white" />
-            <span className="border-b border-black w-4"></span>
-            <p>RELIGION</p>
+            <p>DRUPAL</p>
           </div>
         </div>
       </div>
