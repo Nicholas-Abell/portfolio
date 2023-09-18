@@ -22,13 +22,13 @@ const TempStats: React.FC<TempStatsProps> = ({ sheetNumber }) => {
       </div>
       <div className="bg-white rounded-lg border-2 border-gray-400 flex flex-col justify-between items-center">
         <div className="w-full h-full flex justify-center items-center">
-          <p className="py-8">2d6</p>
+          <p className="py-8">2d8</p>
         </div>
         <p className="font-bold uppercase">HIT DICE</p>
       </div>
       <div className="bg-white rounded-lg border-2 border-gray-400 flex flex-col justify-between items-center">
         <div className="w-full h-full flex justify-center items-center">
-          <p className="py-8">12ft</p>
+          <p className="py-8">30ft</p>
         </div>
         <p className="font-bold uppercase">SPEED</p>
       </div>

@@ -44,26 +44,38 @@ const Biography: React.FC<BiographyProps> = ({ sheetNumber }) => {
         <div className="w-full border-black border-b"></div>
         <p className="text-center font-bold uppercase border-t-2">Languages</p>
       </div>
-      <div className="bg-white grid grid-cols-1 grid-rows-6 border-2 border-gray-400 col-span-2 rounded-lg gap-2">
+      <div className="bg-white grid grid-cols-1 grid-rows-6 border-2 border-gray-400 col-span-2 rounded-lg gap-2 text-xs">
         <div className="grid grid-cols-4 px-4 text-gray-400 gap-4">
           <p className=" col-span-2 text-xs">NAME</p>
           <p className=" col-span-1 text-xs">ATK BONUS</p>
           <p className=" col-span-1 text-xs">DMG/TYPE</p>
         </div>
         <div className="grid grid-cols-4 px-4 text-gray-400 gap-4">
-          <div className="col-span-2 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
-          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
-          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
+          <div className="col-span-2 bg-gray-200 rounded-tl-lg rounded-br-lg text-center">
+            <p>CyberPowerPC</p>
+          </div>
+          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg text-center">
+            <p>+0</p>
+          </div>
+          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg text-center">
+            <p>Desktop</p>
+          </div>
         </div>
         <div className="grid grid-cols-4 px-4 text-gray-400 gap-4">
-          <div className="col-span-2 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
-          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
-          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
+          <div className="col-span-2 bg-gray-200 rounded-tl-lg rounded-br-lg text-center">
+            <p>Dell G7 15</p>
+          </div>
+          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg text-center">
+            <p>+0</p>
+          </div>
+          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg text-center">
+            <p>Laptop</p>
+          </div>
         </div>
         <div className="grid grid-cols-4 px-4 text-gray-400 gap-4">
-          <div className="col-span-2 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
-          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
-          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg"></div>
+          <div className="col-span-2 bg-gray-200 rounded-tl-lg rounded-br-lg text-center"></div>
+          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg text-center"></div>
+          <div className="col-span-1 bg-gray-200 rounded-tl-lg rounded-br-lg text-center"></div>
         </div>
         <div className="w-full border-black border-b"></div>
         <p className="text-center font-bold uppercase">EQUIPMENT</p>
