@@ -6,7 +6,7 @@ import { CgWebsite } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiFirebase } from "react-icons/si";
 import MovieDatabaseImg from "../../public/assets/images/movie_database.png";
-import Skill from "../../components/skills/Skill_Icon";
+import Skill from "../../components/sections/skills/Skill_Icon";
 import Link from "next/link";
 
 export default function MovieDatabase() {

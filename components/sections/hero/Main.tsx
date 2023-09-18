@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import IconPalette from "../shared/IconPalette";
+import IconPalette from "../../shared/IconPalette";
 import { SiReact, SiTailwindcss, SiFirebase } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 

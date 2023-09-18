@@ -9,7 +9,7 @@ type layoutProps = {
 
 export default function RootLayout({ children }: layoutProps) {
   const [mobileNav, setMobileNav] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");

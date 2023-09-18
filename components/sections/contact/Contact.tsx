@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { HiChevronDoubleUp } from "react-icons/hi";
-import profileImg from "../../public/assets/images/profile.png";
+import profileImg from "../../../public/assets/images/profile.png";
 import Image from "next/image";
-import IconPalette from "../shared/IconPalette";
+import IconPalette from "../../shared/IconPalette";
 
 const Contact = () => {
   const scrollToTop = () => {
