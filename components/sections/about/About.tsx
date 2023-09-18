@@ -94,9 +94,9 @@ const About = () => {
             className="cursor-pointer opacity-25 hover:opacity-100 hover:scale-110 transition-opacity ease-in duration-200"
           />
         </div>
-        <AbilityScores sheetNumber={sheetNumber} />
-        <TempStats sheetNumber={sheetNumber} />
         <Biography sheetNumber={sheetNumber} />
+        <TempStats sheetNumber={sheetNumber} />
+        <AbilityScores sheetNumber={sheetNumber} />
       </div>
     </section>
   );

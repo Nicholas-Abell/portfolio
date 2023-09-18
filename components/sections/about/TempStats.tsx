@@ -10,7 +10,7 @@ const TempStats: React.FC<TempStatsProps> = ({ sheetNumber }) => {
       className={`${
         sheetNumber === 2 ? "grid" : "hidden"
       } min-h-[50vh] md:min-h-0
-  border border-gray-400 grid-cols-2 justify-center gap-1 p-4 lg:grid bg-gray-200 rounded-lg md:hover:scale-105 md:hover:shadow-lg shadow-black ease-in duration-300`}
+  border border-gray-400 grid-cols-2 justify-center gap-1 p-4 lg:grid bg-gray-200 rounded-lg lg:hover:scale-105 lg:hover:shadow-lg shadow-black ease-in duration-300`}
     >
       <BsFillHeartFill size={60} className="m-auto text-black" />
       <BiSolidShield size={60} className="m-auto text-black" />
