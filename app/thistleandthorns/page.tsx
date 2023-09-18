@@ -4,7 +4,7 @@ import React from "react";
 import { CgWebsite } from "react-icons/cg";
 import { FaSquarespace } from "react-icons/fa";
 import thistleandthornsimage from "../../public/assets/images/Thistle&Thorns.png";
-import Skill from "../../components/skills/Skill_Icon";
+import Skill from "../../components/sections/skills/Skill_Icon";
 import Link from "next/link";
 
 export default function ThislteandThorns() {

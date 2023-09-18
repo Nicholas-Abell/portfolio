@@ -1,15 +1,15 @@
 "use client";
 import React, { useState } from "react";
-import profileTwo from "../../public/assets/images/profile.png";
+import profileTwo from "../../../public/assets/images/profile.png";
 import Image from "next/image";
 import { Roboto, Indie_Flower } from "@next/font/google";
 import {
   IoChevronBackCircleSharp,
   IoChevronForwardCircleSharp,
 } from "react-icons/io5";
-import AbilityScores from "../about/AbilityScores";
-import Biography from "../about/Biography";
-import TempStats from "../about/TempStats";
+import AbilityScores from "./AbilityScores";
+import Biography from "./Biography";
+import TempStats from "./TempStats";
 
 const indie_flower = Indie_Flower({
   subsets: ["latin"],
