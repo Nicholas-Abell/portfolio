@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({
             <h3>Home</h3>
           </button>
 
-          <button
+          {/* <button
             onClick={toggleDarkMode}
             className="w-[100px] h-[45px] shadow-lg shadow-gray-400 rounded-xl uppercase flex justify-center items-center gap-2 p-2 hover:text-[#1251ff] dark:text-gray-300 dark:hover:shadow-red-600 hover:shadow-md hover:shadow-[#8a2be2] dark:hover:text-red-600 ease-in duration-200"
           >
@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({
               <BsFillSunFill size={25} className="w-full h-full" />
             )}
             <h3>Theme</h3>
-          </button>
+          </button> */}
         </div>
         <ul className="hidden md:flex dark:text-gray-100 font-bold">
           <li
