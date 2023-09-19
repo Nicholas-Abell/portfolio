@@ -16,6 +16,7 @@ import { FaReact, FaSquarespace } from "react-icons/fa";
 import { GiSevenPointedStar } from "react-icons/gi";
 import { CgWebsite } from "react-icons/cg";
 import { TbAmpersand } from "react-icons/tb";
+import { FaUnity } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -101,18 +102,12 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="bg-red-400 h-full w-full flex flex-col justify-center items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
-        <div className="absolute bg-blue-600 top-0 left-0 py-1 px-8 w-full text-white flex justify-between">
+      <div className="bg-black h-full w-full flex flex-col justify-center items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
+        <div className="absolute bg-yellow-600 top-0 left-0 py-1 px-8 w-full text-black flex justify-between">
           <p>P2</p> <p>sdfasf</p>
           <p>00012</p>
         </div>
-        <div className="flex justify-center items-center -ml-8">
-          <TbAmpersand size={80} />
-          <div className="flex flex-col">
-            <h2 className="-ml-8">Thistle</h2>
-            <h2>Thorns</h2>
-          </div>
-        </div>
+        <h2 className="pt-4">Everdell</h2>
         <div className="flex justify-center items-center ">
           <Link
             href="https://www.thistleandthornsllc.com/"
@@ -123,7 +118,7 @@ const Projects = () => {
           </Link>
         </div>
         <Image
-          src={thistlethorns}
+          src={everdell}
           alt="thistle&Thorns"
           className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
         />
@@ -137,7 +132,7 @@ const Projects = () => {
           </p>
         </div>
         <div className="w-full flex justify-center items-center relative border border-1 border-white h-0">
-          <FaSquarespace size={80} className="bg-red-400 p-4" />
+          <FaUnity size={80} className="bg-black p-4" />
         </div>
       </div>
     </div>
