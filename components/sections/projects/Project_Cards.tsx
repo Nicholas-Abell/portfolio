@@ -2,8 +2,9 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { CgWebsite } from "react-icons/cg";
-import { FaSquarespace, FaUnity } from "react-icons/fa";
+import { FaSquarespace, FaUnity, FaGithub, FaReact } from "react-icons/fa";
 import { TbAmpersand } from "react-icons/tb";
+import { SiTailwindcss, SiFirebase } from "react-icons/si";
 
 import everdell from "../../../public/assets/images/everdell_1.jpg";
 import reddit from "../../../public/assets/images/reddit_emblem.png";
@@ -20,13 +21,21 @@ export const Everdell: React.FC<ProjectProps> = () => {
         <p>00012</p>
       </div>
       <h2 className="pt-4">Everdell</h2>
-      <div className="flex justify-center items-center ">
+      <h3>Point Calculator</h3>
+      <div className="flex justify-center items-center gap-2">
         <Link
           href="https://www.thistleandthornsllc.com/"
-          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
+          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-red-800 text-black cursor-default"
         >
           <CgWebsite size={25} className="w-full h-full" />
           <h3>Live</h3>
+        </Link>
+        <Link
+          href="https://github.com/Nicholas-Abell/Everdell-Point-Tracker"
+          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
+        >
+          <FaGithub size={25} className="w-full h-full" />
+          <h3>Github</h3>
         </Link>
       </div>
       <Image
@@ -36,11 +45,12 @@ export const Everdell: React.FC<ProjectProps> = () => {
       />
       <div className="w-[75%] text-left pb-12">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi,
-          numquam ipsum mollitia dolorum, minus tenetur suscipit iure magnam
-          dignissimos dolor quasi neque laudantium molestiae similique omnis,
-          voluptatum quas natus est? Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit.
+          Welcome to the Everdell Point Tracker, a companion app designed to
+          enhance your gaming experience of the popular board game Everdell.
+        </p>
+        <p className="text-red-800">
+          Note: not currently live due to recent issues with Unity change in
+          terms of service
         </p>
       </div>
       <div className="w-full flex justify-center items-center relative border border-1 border-white h-0">
@@ -170,9 +180,9 @@ export const MovieDatabase: React.FC<ProjectProps> = () => {
         </p>
       </div>
       <div className="w-full flex justify-between px-12">
-        <FaSquarespace size={50} />
-        <FaSquarespace size={50} />
-        <FaSquarespace size={50} />
+        <SiTailwindcss size={50} />
+        <FaReact size={50} />
+        <SiFirebase size={50} />
       </div>
     </div>
   );
