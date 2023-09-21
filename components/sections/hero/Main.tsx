@@ -8,10 +8,10 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="w-full h-[95vh] text-center flex justify-center items-center"
+      className="w-full h-screen text-center flex justify-center items-center"
     >
       <div className="relative max-w-[1240px] w-full h-full p-2 flex justify-center items-center">
-        <div>
+        <div className="rounded-full py-32">
           <div
             className="flex justify-center items-center gap-2
            text-gray-700"
