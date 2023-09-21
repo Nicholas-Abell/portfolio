@@ -5,6 +5,7 @@ import {
   Reddit,
   ThistleandThorns,
   MovieDatabase,
+  Wordle,
 } from "./Project_Cards";
 
 const Projects = () => {
@@ -19,16 +20,13 @@ const Projects = () => {
         <Everdell />
         {more && (
           <>
-            <MovieDatabase />
-            <ThistleandThorns />
-            <Reddit />
-            <Everdell />
+            <Wordle />
           </>
         )}
       </div>
       <button
         onClick={() => setMore(true)}
-        className={`bg-red-600 w-[80%] py-2 rounded-lg text-white font-bold ${
+        className={`bg-gray-600 w-[80%] mx-auto py-2 rounded-lg text-white font-bold hover:bg-slate-500/60 ease-in duration-200 ${
           more ? "hidden" : "block"
         }`}
       >

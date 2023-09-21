@@ -10,6 +10,7 @@ import everdell from "../../../public/assets/images/everdell_1.jpg";
 import reddit from "../../../public/assets/images/reddit_emblem.png";
 import thistlethorns from "../../../public/assets/images/Thistle&Thorns.png";
 import movieDatabase from "../../../public/assets/images/movie_database.png";
+import wordle from "../../../public/assets/images/wordle_clone.jpeg";
 
 type ProjectProps = {};
 
@@ -17,7 +18,7 @@ export const MovieDatabase: React.FC<ProjectProps> = () => {
   return (
     <div className="bg-yellow-800 h-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
       <div className="absolute bg-orange-400 p-4 md:p-8 h-80 rotate-45 -top-24 left-8 text-center" />
-      <p className="absolute top-2 left-3 text-yellow-400 text-2xl">P1</p>
+      <p className="absolute top-2 left-3 text-orange-400 text-2xl">P1</p>
       <h2 className="font-bold">Movie Database</h2>
       <p className="text-yellow-400 text-xl font-bold">Movie Database</p>
       <div className="flex justify-center items-center gap-2">
@@ -63,19 +64,16 @@ export const Everdell: React.FC<ProjectProps> = () => {
   return (
     <div className="bg-gradient-to-b from-teal-500 to-black via-black to-100% h-full w-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
       <div className="absolute bg-yellow-600 top-0 left-0 py-1 px-8 w-full text-black flex justify-between">
-        <p>P2</p> <p>sdfasf</p>
-        <p>00012</p>
+        <p>P4</p> <p>C#</p>
+        <p>UNITY</p>
       </div>
       <h2 className="pt-4">Everdell</h2>
       <h3>Point Calculator</h3>
       <div className="flex justify-center items-center gap-2">
-        <Link
-          href="https://www.thistleandthornsllc.com/"
-          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-red-800 text-black cursor-default"
-        >
+        <div className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-red-800 text-black cursor-default">
           <CgWebsite size={25} className="w-full h-full" />
           <h3>Live</h3>
-        </Link>
+        </div>
         <Link
           href="https://github.com/Nicholas-Abell/Everdell-Point-Tracker"
           className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
@@ -99,8 +97,10 @@ export const Everdell: React.FC<ProjectProps> = () => {
           terms of service
         </p>
       </div>
-      <div className="w-full flex justify-center items-center relative border border-1 border-white h-0">
-        <FaUnity size={80} className="bg-black p-4" />
+      <div className="w-full grid grid-cols-3 justify-center items-center">
+        <div className="border border-white " />
+        <FaUnity size={50} className="mx-auto" />
+        <div className="border border-white " />
       </div>
     </div>
   );
@@ -110,9 +110,9 @@ export const Reddit: React.FC<ProjectProps> = () => {
   return (
     <div className="bg-blue-400 h-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
       <div className="absolute bg-yellow-400 p-4 md:p-8 h-80 rotate-45 -top-24 left-8 text-center" />
-      <p className="absolute top-0 left-0 text-yellow-400 text-2xl">P1</p>
-      <h2 className="font-bold">Project 1</h2>
-      <p className="text-yellow-400 text-3xl font-bold">Reddit Clone</p>
+      <p className="absolute top-2 left-3 text-yellow-400 text-2xl">P3</p>
+      <h2 className="font-bold">Reddit</h2>
+      <p className="text-yellow-400 text-3xl font-bold">Clone</p>
       <div className="flex justify-center items-center gap-2">
         <Link
           href="https://reddit-clone-4fg5-git-main-nicholas-abell.vercel.app/"
@@ -136,11 +136,12 @@ export const Reddit: React.FC<ProjectProps> = () => {
       />
       <div className="w-[75%] text-left">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi,
-          numquam ipsum mollitia dolorum, minus tenetur suscipit iure magnam
-          dignissimos dolor quasi neque laudantium molestiae similique omnis,
-          voluptatum quas natus est? Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit.
+          A clone of the populer app Reddit. Made in React using TypeScript,
+          styled with Tailwind CSS and Chakra UI.
+          <br />
+          Create Communities
+          <br />
+          Create Posts
         </p>
       </div>
       <div className="w-full flex justify-between px-12 mt-auto">
@@ -182,15 +183,66 @@ export const ThistleandThorns: React.FC<ProjectProps> = () => {
       />
       <div className="w-[75%] text-left pb-12">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi,
-          numquam ipsum mollitia dolorum, minus tenetur suscipit iure magnam
-          dignissimos dolor quasi neque laudantium molestiae similique omnis,
-          voluptatum quas natus est? Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit.
+          A website that I desinged and built for a client. They approached me
+          after having difficulty with thier chosen cms. I had never worked with
+          Squarespace prior to this.
         </p>
       </div>
-      <div className="w-full flex justify-center items-center relative border border-1 border-white h-0">
-        <FaSquarespace size={80} className="bg-red-400 p-4" />
+      <div className="w-full grid grid-cols-3 justify-center items-center">
+        <div className="border border-white " />
+        <FaSquarespace size={50} className="mx-auto" />
+        <div className="border border-white " />
+      </div>
+    </div>
+  );
+};
+
+export const Wordle: React.FC<ProjectProps> = () => {
+  return (
+    <div className="bg-gradient-to-b from-black via-amber-950 to-red-800 to-100% h-full w-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
+      <div className="absolute bg-yellow-600 top-0 left-0 py-1 px-8 w-full text-black flex justify-between">
+        <p>P5</p>
+        <p>JS</p>
+        <p>React</p>
+      </div>
+      <h2 className="pt-4">Wordle</h2>
+      <h3>clone</h3>
+      <div className="flex justify-center items-center gap-2">
+        <Link
+          href="https://nicholas-abell.github.io/wordle_clone/"
+          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
+        >
+          <CgWebsite size={25} className="w-full h-full" />
+          <h3>Live</h3>
+        </Link>
+        <Link
+          href="https://github.com/Nicholas-Abell/wordle_clone"
+          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
+        >
+          <FaGithub size={25} className="w-full h-full" />
+          <h3>Github</h3>
+        </Link>
+      </div>
+      <Image
+        src={wordle}
+        alt="thistle&Thorns"
+        className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
+      />
+      <div className="w-[75%] text-left pb-12">
+        A clone of the popular game wordle.
+        <br />
+        Guess a five letter word.
+        <br />
+        Red: incorrect letter
+        <br />
+        Yellow: correct letter wrong space
+        <br />
+        Green: correct letter and space
+      </div>
+      <div className="w-full grid grid-cols-3 justify-center items-center">
+        <div className="border border-white " />
+        <SiReact size={50} className="mx-auto" />
+        <div className="border border-white " />
       </div>
     </div>
   );
