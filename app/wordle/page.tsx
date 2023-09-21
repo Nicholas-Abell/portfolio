@@ -46,7 +46,7 @@ export default function SMSConstruction() {
             <br />
             Yellow: correct letter wrong space
             <br />
-            Green: correct letter and space{" "}
+            Green: correct letter and space
           </p>
           <div className="flex items-center gap-4">
             <Link

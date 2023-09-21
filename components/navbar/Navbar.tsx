@@ -6,19 +6,10 @@ import { FaHome } from "react-icons/fa";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import IconPalette from "../shared/IconPalette";
 
-type NavbarProps = {
-  toggleDarkMode: () => void;
-  isDarkMode: boolean;
-  mobileNav: boolean;
-  setMobileNav: (arg: boolean) => void;
-};
+type NavbarProps = {};
 
-const Navbar: React.FC<NavbarProps> = ({
-  toggleDarkMode,
-  isDarkMode,
-  mobileNav,
-  setMobileNav,
-}) => {
+const Navbar: React.FC<NavbarProps> = ({}) => {
+  const [mobileNav, setMobileNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
   const handleMobileNav = () => {
