@@ -23,13 +23,14 @@ import Skill_Icon from "./Skill_Icon";
 import SkillTree_FrontEnd from "./SkillTree_FrontEnd";
 import SkillTree_BackEnd from "./SkillTree_BackEnd";
 import SkillTree_Other from "./SkillTree_Other";
+import Title from "../../shared/Title";
 
 const Skills = () => {
   const [skillsSelected, setSkillsSelected] = useState("front-end");
 
   return (
-    <div className="w-full py-12 px-2">
-      <h2 className="text-4xl">Skills</h2>
+    <div className="w-full py-12 px-2" id="skills">
+      <Title title="Skills" />
       <div className="hidden lg:grid w-full grid-cols-3 text-center bg-gray-400 gap-2 pb-2">
         <div className="bg-gray-200">
           <p>Font-end</p>

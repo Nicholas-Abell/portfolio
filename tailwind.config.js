@@ -11,6 +11,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        reddnd: "#C73032",
+        redwine: "#930C10",
+      },
       keyframes: {},
     },
   },

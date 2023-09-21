@@ -10,6 +10,7 @@ import {
 import AbilityScores from "./AbilityScores";
 import Biography from "./Biography";
 import TempStats from "./TempStats";
+import Title from "../../shared/Title";
 
 const indie_flower = Indie_Flower({
   subsets: ["latin"],
@@ -27,11 +28,8 @@ const About = () => {
 
   return (
     <section id="about" className="w-full px-2 py-10">
-      <div className="w-full grid grid-cols-3 justify-center items-center px-4 pb-8">
-        <div className="border border-black " />
-        <p className="text-center">About</p>
-        <div className="border border-black " />
-      </div>
+      <Title title="About" />
+
       <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-center items-center w-full px-4 lg:px-24 pb-4">
         <Image
           src={profileTwo}
@@ -103,6 +101,7 @@ const About = () => {
         <TempStats sheetNumber={sheetNumber} />
         <AbilityScores sheetNumber={sheetNumber} />
       </div>
+      
     </section>
   );
 };

@@ -4,6 +4,7 @@ import { HiChevronDoubleUp } from "react-icons/hi";
 import profileImg from "../../../public/assets/images/profile.png";
 import Image from "next/image";
 import IconPalette from "../../shared/IconPalette";
+import Title from "../../shared/Title";
 
 const Contact = () => {
   const scrollToTop = () => {
@@ -12,6 +13,7 @@ const Contact = () => {
 
   return (
     <div className="w-full lg:h-screen">
+      <Title title="CONTACT" />
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p
           id="contact"

@@ -7,12 +7,14 @@ import {
   MovieDatabase,
   Wordle,
 } from "./Project_Cards";
+import Title from "../../shared/Title";
 
 const Projects = () => {
   const [more, setMore] = useState(false);
 
   return (
     <div className="w-full h-auto text-center" id="projects">
+      <Title title="PROJECTS" />
       <div className="grid grid-cols-1 grid-rows-1 lg:grid-cols-2 xl:grid-cols-3 xl:px-12 gap-4 justify-center items-center mt-24 p-4 overflow-hidden">
         <MovieDatabase />
         <ThistleandThorns />
