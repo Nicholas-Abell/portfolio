@@ -4,7 +4,7 @@ import Link from "next/link";
 import { CgWebsite } from "react-icons/cg";
 import { FaSquarespace, FaUnity, FaGithub, FaReact } from "react-icons/fa";
 import { TbAmpersand } from "react-icons/tb";
-import { SiTailwindcss, SiFirebase } from "react-icons/si";
+import { SiTailwindcss, SiFirebase, SiReact } from "react-icons/si";
 
 import everdell from "../../../public/assets/images/everdell_1.jpg";
 import reddit from "../../../public/assets/images/reddit_emblem.png";
@@ -13,9 +13,55 @@ import movieDatabase from "../../../public/assets/images/movie_database.png";
 
 type ProjectProps = {};
 
+export const MovieDatabase: React.FC<ProjectProps> = () => {
+  return (
+    <div className="bg-yellow-800 h-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
+      <div className="absolute bg-orange-400 p-4 md:p-8 h-80 rotate-45 -top-24 left-8 text-center" />
+      <p className="absolute top-2 left-3 text-yellow-400 text-2xl">P1</p>
+      <h2 className="font-bold">Movie Database</h2>
+      <p className="text-yellow-400 text-xl font-bold">Movie Database</p>
+      <div className="flex justify-center items-center gap-2">
+        <Link
+          href="https://github.com/Nicholas-Abell/movie_database"
+          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
+        >
+          <FaGithub size={25} className="w-full h-full" />
+          <h3>Github</h3>
+        </Link>
+        <Link
+          href="https://movie-database-4bf43.web.app/"
+          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
+        >
+          <CgWebsite size={25} className="w-full h-full" />
+          <h3>Live</h3>
+        </Link>
+      </div>
+      <Image
+        src={movieDatabase}
+        alt="Movie Database"
+        className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
+      />
+      <div className="w-[75%] text-left">
+        <p className="text-sm">
+          Curious about new and upcoming movies? Looking for a classic and
+          wonder which streaming service to watch it on? This solves these
+          issues in a single website. Inspired by Netflix's design this site
+          uses the IMDB database api for up to date movie information and the
+          Youtube api for trailers.
+        </p>
+      </div>
+      <div className="w-full flex justify-between px-12 pt-8">
+        <SiTailwindcss size={50} />
+        <FaReact size={50} />
+        <SiFirebase size={50} />
+      </div>
+    </div>
+  );
+};
+
 export const Everdell: React.FC<ProjectProps> = () => {
   return (
-    <div className="bg-gradient-to-b from-teal-500 to-black via-black to-100% h-full w-full max-w-[620px] mx-auto flex flex-col justify-center items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
+    <div className="bg-gradient-to-b from-teal-500 to-black via-black to-100% h-full w-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
       <div className="absolute bg-yellow-600 top-0 left-0 py-1 px-8 w-full text-black flex justify-between">
         <p>P2</p> <p>sdfasf</p>
         <p>00012</p>
@@ -62,14 +108,21 @@ export const Everdell: React.FC<ProjectProps> = () => {
 
 export const Reddit: React.FC<ProjectProps> = () => {
   return (
-    <div className="bg-blue-400 h-full max-w-[620px] mx-auto flex flex-col justify-center items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
+    <div className="bg-blue-400 h-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
       <div className="absolute bg-yellow-400 p-4 md:p-8 h-80 rotate-45 -top-24 left-8 text-center" />
       <p className="absolute top-0 left-0 text-yellow-400 text-2xl">P1</p>
       <h2 className="font-bold">Project 1</h2>
       <p className="text-yellow-400 text-3xl font-bold">Reddit Clone</p>
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-center gap-2">
         <Link
-          href="https://www.thistleandthornsllc.com/"
+          href="https://reddit-clone-4fg5-git-main-nicholas-abell.vercel.app/"
+          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
+        >
+          <FaGithub size={25} className="w-full h-full" />
+          <h3>Github</h3>
+        </Link>
+        <Link
+          href="https://github.com/Nicholas-Abell/reddit_clone"
           className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
         >
           <CgWebsite size={25} className="w-full h-full" />
@@ -88,15 +141,12 @@ export const Reddit: React.FC<ProjectProps> = () => {
           dignissimos dolor quasi neque laudantium molestiae similique omnis,
           voluptatum quas natus est? Lorem ipsum dolor, sit amet consectetur
           adipisicing elit.
-          <br /> Repellendus, corrupti soluta similique ullam vitae omnis vel
-          libero ratione commodi ad doloribus iste, aperiam qui? In illo
-          mollitia harum voluptas aspernatur.
         </p>
       </div>
-      <div className="w-full flex justify-between px-12">
-        <FaSquarespace size={50} />
-        <FaSquarespace size={50} />
-        <FaSquarespace size={50} />
+      <div className="w-full flex justify-between px-12 mt-auto">
+        <SiTailwindcss size={50} />
+        <SiReact size={50} />
+        <SiFirebase size={50} />
       </div>
     </div>
   );
@@ -104,7 +154,7 @@ export const Reddit: React.FC<ProjectProps> = () => {
 
 export const ThistleandThorns: React.FC<ProjectProps> = () => {
   return (
-    <div className="bg-red-400 h-full w-full max-w-[620px] mx-auto flex flex-col justify-center items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
+    <div className="bg-red-400 h-full w-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
       <div className="absolute bg-blue-600 top-0 left-0 py-1 px-8 w-full text-white flex justify-between">
         <p>P2</p> <p>sdfasf</p>
         <p>00012</p>
@@ -141,48 +191,6 @@ export const ThistleandThorns: React.FC<ProjectProps> = () => {
       </div>
       <div className="w-full flex justify-center items-center relative border border-1 border-white h-0">
         <FaSquarespace size={80} className="bg-red-400 p-4" />
-      </div>
-    </div>
-  );
-};
-
-export const MovieDatabase: React.FC<ProjectProps> = () => {
-  return (
-    <div className="bg-yellow-800 h-full max-w-[620px] mx-auto flex flex-col justify-center items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
-      <div className="absolute bg-orange-400 p-4 md:p-8 h-80 rotate-45 -top-24 left-8 text-center" />
-      <p className="absolute top-2 left-3 text-yellow-400 text-2xl">P1</p>
-      <h2 className="font-bold">Project 1</h2>
-      <p className="text-yellow-400 text-3xl font-bold">Movie Database</p>
-      <div className="flex justify-center items-center ">
-        <Link
-          href="https://www.thistleandthornsllc.com/"
-          className="flex justify-center items-center gap-2 p-2 shadow-gray-400 rounded-xl uppercase bg-white text-black neon"
-        >
-          <CgWebsite size={25} className="w-full h-full" />
-          <h3>Live</h3>
-        </Link>
-      </div>
-      <Image
-        src={movieDatabase}
-        alt="Movie Database"
-        className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
-      />
-      <div className="w-[75%] text-left">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi,
-          numquam ipsum mollitia dolorum, minus tenetur suscipit iure magnam
-          dignissimos dolor quasi neque laudantium molestiae similique omnis,
-          voluptatum quas natus est? Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit.
-          <br /> Repellendus, corrupti soluta similique ullam vitae omnis vel
-          libero ratione commodi ad doloribus iste, aperiam qui? In illo
-          mollitia harum voluptas aspernatur.
-        </p>
-      </div>
-      <div className="w-full flex justify-between px-12">
-        <SiTailwindcss size={50} />
-        <FaReact size={50} />
-        <SiFirebase size={50} />
       </div>
     </div>
   );
