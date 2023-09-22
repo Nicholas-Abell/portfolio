@@ -1,5 +1,4 @@
 import React from "react";
-import { BsGit } from "react-icons/bs";
 import Skill_Icon from "./Skill_Icon";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiPrisma, SiFirebase } from "react-icons/si";
@@ -17,7 +16,7 @@ const SkillTree_BackEnd: React.FC<SkillTree_BackEndProps> = ({
     <div
       className={`${
         skillsSelected === "back-end" ? "grid" : "hidden"
-      } grid-cols-3 w-full gap-12 p-4 lg:grid`}
+      } grid-cols-3 w-full gap-12 p-4 lg:grid lg:border-r lg:border-l lg:border-redwine`}
     >
       <div></div>
       <Skill_Icon
