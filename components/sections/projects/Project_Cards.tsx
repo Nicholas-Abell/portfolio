@@ -20,7 +20,7 @@ export const MovieDatabase: React.FC<ProjectProps> = () => {
       <div className="absolute bg-orange-400 p-4 md:p-8 h-80 rotate-45 -top-24 left-8 text-center" />
       <p className="absolute top-2 left-3 text-orange-400 text-2xl">P1</p>
       <h2 className="font-bold">Movie Database</h2>
-      <p className="text-yellow-400 text-xl font-bold">Movie Database</p>
+      <p className="text-orange-400 text-xl font-bold">Movie Database</p>
       <div className="flex justify-center items-center gap-2">
         <Link
           href="https://github.com/Nicholas-Abell/movie_database"
@@ -157,7 +157,7 @@ export const ThistleandThorns: React.FC<ProjectProps> = () => {
   return (
     <div className="bg-red-400 h-full w-full max-w-[620px] mx-auto flex flex-col justify-between items-center gap-4 py-8 relative overflow-hidden text-white font-bold rounded-xl">
       <div className="absolute bg-blue-600 top-0 left-0 py-1 px-8 w-full text-white flex justify-between">
-        <p>P2</p> <p>sdfasf</p>
+        <p>P2</p> <p>Squarespace</p>
         <p>00012</p>
       </div>
       <div className="flex justify-center items-center -ml-8">

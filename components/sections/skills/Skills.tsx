@@ -1,25 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaBootstrap,
-  FaSass,
-  FaSquarespace,
-} from "react-icons/fa";
-import {
-  SiJavascript,
-  SiTailwindcss,
-  SiFirebase,
-  SiTypescript,
-  SiMongodb,
-  SiRedux,
-  SiNodedotjs,
-} from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { BsGit } from "react-icons/bs";
-import Skill_Icon from "./Skill_Icon";
 import SkillTree_FrontEnd from "./SkillTree_FrontEnd";
 import SkillTree_BackEnd from "./SkillTree_BackEnd";
 import SkillTree_Other from "./SkillTree_Other";
@@ -76,9 +56,9 @@ const Skills = () => {
             Other
           </button>
         </div>
-          <SkillTree_FrontEnd skillsSelected={skillsSelected} />
-          <SkillTree_BackEnd skillsSelected={skillsSelected} />
-          <SkillTree_Other skillsSelected={skillsSelected} />
+        <SkillTree_FrontEnd skillsSelected={skillsSelected} />
+        <SkillTree_BackEnd skillsSelected={skillsSelected} />
+        <SkillTree_Other skillsSelected={skillsSelected} />
       </div>
     </div>
   );

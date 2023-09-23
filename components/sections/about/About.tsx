@@ -34,7 +34,7 @@ const About = () => {
         <Image
           src={profileTwo}
           alt="profile"
-          className="rounded-full border-gray-700 border-8 p-1"
+          className="rounded-full border-redwine border-8 p-1"
           height={200}
           width={200}
         />
@@ -84,7 +84,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-2 p-4 relative bg-white">
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-2 p-4 relative bg-white min-h-[80vh] lg:min-h-0">
         <div className="lg:hidden absolute w-full flex justify-between top-[50%]">
           <IoChevronBackCircleSharp
             size={60}
@@ -101,7 +101,6 @@ const About = () => {
         <TempStats sheetNumber={sheetNumber} />
         <AbilityScores sheetNumber={sheetNumber} />
       </div>
-      
     </section>
   );
 };

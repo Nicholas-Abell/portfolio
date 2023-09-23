@@ -41,10 +41,11 @@ const SkillTree_BackEnd: React.FC<SkillTree_BackEndProps> = ({
         icon={<SiPrisma size={50} className="text-gray-400" />}
         arrowColor="border-green-400"
       />
-      <Skill_Icon
+      <div></div>
+      {/* <Skill_Icon
         title="MySQL"
         icon={<GrMysql size={50} className="text-blue-600" />}
-      />
+      /> */}
       <Skill_Icon
         title="MongoDB"
         icon={<SiMongodb size={50} className="text-green-600" />}

@@ -12,8 +12,8 @@ const TempStats: React.FC<TempStatsProps> = ({ sheetNumber }) => {
       } min-h-[50vh] md:min-h-0
   border border-gray-400 grid-cols-2 justify-center gap-1 p-4 lg:grid bg-gray-200 rounded-lg lg:hover:scale-105 lg:hover:shadow-lg shadow-black ease-in duration-300`}
     >
-      <BsFillHeartFill size={60} className="m-auto text-black" />
-      <BiSolidShield size={60} className="m-auto text-black" />
+      <BsFillHeartFill size={60} className="m-auto text-white" />
+      <BiSolidShield size={62} className="m-auto text-white" />
       <div className="bg-white rounded-lg border-2 border-gray-400 flex flex-col justify-between items-center">
         <div className="w-full h-full flex justify-center items-center">
           <p className="py-8">18</p>

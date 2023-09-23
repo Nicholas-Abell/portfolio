@@ -20,7 +20,7 @@ const Skill_Icon: React.FC<Skill_IconProps> = ({
   arrowLeft_lg,
 }) => {
   return (
-    <div className={`p-4 neon rounded-xl relative z-201 col-span-${colSpan}`}>
+    <div className={`p-4 neon rounded-xl relative z-201 col-span-${colSpan} `}>
       <div className="grid grid-cols-1 gap-4 justify-center items-center z-20">
         <div className="m-auto">{icon}</div>
         <div className="flex flex-col items-center justify-center">
