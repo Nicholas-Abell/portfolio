@@ -29,9 +29,9 @@ const Skills = () => {
             onClick={() => setSkillsSelected("front-end")}
             className={`${
               skillsSelected === "front-end"
-                ? "bg-none text-reddnd"
-                : "bg-redwine text-white"
-            } uppercase tracking-wide font-extrabold w-full text-center justify-center items-center border-4 border-slate-500 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+                ? "bg-none text-reddnd cursor-default"
+                : "bg-redwine text-white hover:bg-reddnd "
+            } uppercase tracking-wide font-extrabold w-full ease-in-out duration-200 text-center justify-center items-center border-4 border-slate-500 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Frontend
           </button>
@@ -39,9 +39,9 @@ const Skills = () => {
             onClick={() => setSkillsSelected("back-end")}
             className={`${
               skillsSelected === "back-end"
-                ? "bg-none text-reddnd"
-                : "bg-redwine text-white"
-            } uppercase tracking-wide font-extrabold w-full text-center justify-center items-center border-4 border-slate-500 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+                ? "bg-none text-reddnd cursor-default"
+                : "bg-redwine text-white hover:bg-reddnd "
+            } uppercase tracking-wide font-extrabold w-full ease-in-out duration-200 text-center justify-center items-center border-4 border-slate-500 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Backend
           </button>
@@ -49,9 +49,9 @@ const Skills = () => {
             onClick={() => setSkillsSelected("other")}
             className={`${
               skillsSelected === "other"
-                ? "bg-none text-reddnd"
-                : "bg-redwine text-white"
-            } uppercase tracking-wide font-extrabold w-full text-center justify-center items-center border-4 border-slate-500 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
+                ? "bg-none text-reddnd cursor-default"
+                : "bg-redwine text-white hover:bg-reddnd "
+            } uppercase tracking-wide font-extrabold w-full ease-in-out duration-200 text-center justify-center items-center border-4 border-slate-500 rounded-md shadow-none focus:shadow-none hover:shadow-none`}
           >
             Other
           </button>
