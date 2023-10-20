@@ -38,9 +38,9 @@ const Biography: React.FC<BiographyProps> = ({ sheetNumber }) => {
         <p className="w-full border-black border-b text-center">
           English - Fluent
         </p>
-        <p className="w-full border-black border-b text-center">
+        {/* <p className="w-full border-black border-b text-center">
           Spanish - Basic
-        </p>
+        </p> */}
         <div className="w-full border-black border-b"></div>
         <p className="text-center font-bold uppercase border-t-2">Languages</p>
       </div>
