@@ -37,11 +37,9 @@ export const MovieDatabase: React.FC<ProjectProps> = () => {
           <h3>Live</h3>
         </Link>
       </div>
-      <Image
-        src={movieDatabase}
-        alt="Movie Database"
-        className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
-      />
+      <div className="bg-gray-200 border-black rounded-lg w-[80%] h-64 relative object-cover">
+        <Image src={movieDatabase} alt="thistle&Thorns" fill />
+      </div>
       <div className="w-[75%] text-left">
         <p className="text-sm">
           Curious about new and upcoming movies? Looking for a classic and
@@ -82,11 +80,9 @@ export const Everdell: React.FC<ProjectProps> = () => {
           <h3>Github</h3>
         </Link>
       </div>
-      <Image
-        src={everdell}
-        alt="thistle&Thorns"
-        className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
-      />
+      <div className="bg-gray-200 border-black rounded-lg w-[80%] h-64 relative object-cover">
+        <Image src={everdell} alt="thistle&Thorns" fill />
+      </div>
       <div className="w-[75%] text-left pb-12">
         <p>
           Welcome to the Everdell Point Tracker, a companion app designed to
@@ -129,11 +125,9 @@ export const Reddit: React.FC<ProjectProps> = () => {
           <h3>Live</h3>
         </Link>
       </div>
-      <Image
-        src={reddit}
-        alt="Reddit Clone"
-        className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
-      />
+      <div className="bg-gray-200 border-black rounded-lg w-[80%] h-64 relative object-cover">
+        <Image src={reddit} alt="thistle&Thorns" fill />
+      </div>
       <div className="w-[75%] text-left">
         <p>
           A clone of the populer app Reddit. Made in React using TypeScript,
@@ -176,11 +170,9 @@ export const ThistleandThorns: React.FC<ProjectProps> = () => {
           <h3>Live</h3>
         </Link>
       </div>
-      <Image
-        src={thistlethorns}
-        alt="thistle&Thorns"
-        className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
-      />
+      <div className="bg-gray-200 border-black rounded-lg w-[80%] h-64 relative object-cover">
+        <Image src={thistlethorns} alt="thistle&Thorns" fill />
+      </div>
       <div className="w-[75%] text-left pb-12">
         <p>
           A website that I desinged and built for a client. They approached me
@@ -223,11 +215,9 @@ export const Wordle: React.FC<ProjectProps> = () => {
           <h3>Github</h3>
         </Link>
       </div>
-      <Image
-        src={wordle}
-        alt="thistle&Thorns"
-        className="bg-gray-200 border-black rounded-lg w-[80%] h-64"
-      />
+      <div className="bg-gray-200 border-black rounded-lg w-[80%] h-64 relative object-cover">
+        <Image src={wordle} alt="thistle&Thorns" fill />
+      </div>
       <div className="w-[75%] text-left pb-12">
         A clone of the popular game wordle.
         <br />

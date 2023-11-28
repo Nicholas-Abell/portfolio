@@ -1,6 +1,6 @@
 # Welcome to My Portfolio!
 
-Hello there, I'm Nicholas Abell, and I'm thrilled to have you here. This portfolio is a window into my world of projects and passions.
+Hello there, I'm Nicholas Abell, and I am thrilled to have you here. This portfolio is a window into my world of projects and passions.
 
 ## Who Am I?
 
